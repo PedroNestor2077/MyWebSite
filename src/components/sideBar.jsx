@@ -13,10 +13,12 @@ function SideBar(){
                 <LinkedInIcon/>
             </NavButton>    
             <NavButton>
-                <InstagramIcon/>
+                <InstagramIcon 
+                href="https://www.instagram.com/pedro__yyy/"/>
             </NavButton>
             <NavButton>
-                <GitHubIcon/>
+                <GitHubIcon 
+                href="https://github.com/PedroNestor2077"/>
             </NavButton>
             <NavButton>
                 <EmailIcon/>

@@ -50,7 +50,6 @@ export const Logo=styled.div`
     background-position:center;
     background-color:rgba(0,0,0,.0);
     width:350px;
-    min-width:350;
     height:80px;
     display:flex;
     justify-content:center;
@@ -61,7 +60,7 @@ export const Logo=styled.div`
 `;
 export const ImgLogo=styled.img`
     width:100%;
-    min-width:200px;
+    min-width:300px;
 `;
 export const NavBar=styled.span`
     display:flex;
@@ -85,11 +84,6 @@ export const NavButton=styled.a`
     &:hover{
         color:black;
     }
-`;
-export const NavIcon=styled.button`
-    border:none;
-    width:auto;
-    height:auto;
 `;
 export const HamburgerNav=styled.div`
     display:flex;
