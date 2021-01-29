@@ -36,16 +36,6 @@ function SmallNav(){
 
             </HamburgerNav>
 
-                <NavButton 
-                    href="https://www.linkedin.com/in/pedro-nestor-a67241200/">
-                    <LinkedInIcon/>
-                </NavButton>
-
-                <NavButton
-                    href="https://github.com/PedroNestor2077">
-                    <GitHubIcon/>
-                </NavButton>
-
                 <NavButton onClick={()=>{
                     if (Show=="80"){
                         setShow("-200")

@@ -7,6 +7,7 @@ export const AppS=styled.div`
     display:flex;
     margin:0px;
     padding:0px;
+    min-width:320px;
 
 `;
 export const Background=styled.div`
@@ -14,6 +15,7 @@ export const Background=styled.div`
     height:100%;
     margin:0px;
     padding:0px;
+    min-width:320px;
 
 `;
 export const ImgBackground=styled.div`
@@ -31,6 +33,9 @@ export const Body = styled.div`
     background-color:rgba(0,0,0,.8);
     height:100%;
     width:100%;
+    min-width:320px;
+
+
 `;
 /* ---------------HEADER----------------- */
 export const HeaderS=styled.div`
@@ -47,7 +52,6 @@ export const HeaderS=styled.div`
     }
 `;
 export const Logo=styled.div`
-    background-position:center;
     background-color:rgba(0,0,0,.0);
     width:350px;
     height:80px;
@@ -60,7 +64,7 @@ export const Logo=styled.div`
 `;
 export const ImgLogo=styled.img`
     width:100%;
-    min-width:300px;
+    min-width:230px;
 `;
 export const NavBar=styled.span`
     display:flex;
@@ -78,6 +82,7 @@ export const NavButton=styled.a`
     width:auto;
     margin-right:3%;
     color:white;
+    max-width:50px;
     text-decoration:none;
     cursor:pointer;
     transition:all .5s;
@@ -102,13 +107,13 @@ export const HamburgerNav=styled.div`
 `;
 /* --------------------SIDE BAR----------- */
 export const SideBarS=styled.div`
-    position:fixed;
+    position:absolute;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
     top:40%;
     left:3px;
-    width:auto;
-    height:200px;
+    width:40px;
     background-color:transparent;
+    
 `;

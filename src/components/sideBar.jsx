@@ -1,30 +1,27 @@
 import React,{useState} from 'react'
 import {SideBarS,NavButton} from './style'
-import InstagramIcon from '@material-ui/icons/Instagram';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import EmailIcon from '@material-ui/icons/Email';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import {TiSocialLinkedin,TiSocialInstagram} from "react-icons/ti"
+import { AiFillGithub,AiOutlineWhatsApp} from "react-icons/ai"
+import { MdEmail } from "react-icons/md"
 
 function SideBar(){
     return(
         <SideBarS>
-            <NavButton>
-                <LinkedInIcon/>
+            <NavButton onClick={()=>console.log(window.innerWidth)}>
+                <TiSocialLinkedin size="100%"/>
             </NavButton>    
             <NavButton>
-                <InstagramIcon 
-                href="https://www.instagram.com/pedro__yyy/"/>
+                <TiSocialInstagram size="100%"/>
             </NavButton>
             <NavButton>
-                <GitHubIcon 
+                <AiFillGithub size="100%"
                 href="https://github.com/PedroNestor2077"/>
             </NavButton>
             <NavButton>
-                <EmailIcon/>
+                <MdEmail size="100%"/>
             </NavButton>
             <NavButton>
-                <WhatsAppIcon/>
+                <AiOutlineWhatsApp size="100%"/>
             </NavButton>
         </SideBarS>
     )

@@ -24,6 +24,7 @@ function Header(props){
 
     return(
         <HeaderS>
+        
             <Logo>
                 <ImgLogo src={logo}>
                 </ImgLogo>
