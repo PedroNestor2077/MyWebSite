@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {SideBarS,NavButton} from './style'
+import {SideBarS,NavButton} from './headerStyle.js'
 import {TiSocialLinkedin,TiSocialInstagram} from "react-icons/ti"
 import { AiFillGithub,AiOutlineWhatsApp} from "react-icons/ai"
 import { MdEmail } from "react-icons/md"
