@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
-import {HeaderS,Logo,ImgLogo} from "./headerStyle.js"
+import {HeaderS,Logo,ImgLogo,ScrollDownButton} from "./headerStyle.js"
 import SideBar from "./sideBar"
 import NavBar from "./navBar"
+import {RiArrowDownLine} from "react-icons/ri"
 
 function Header(){
     var logo="images/logoSite.png"
@@ -14,6 +15,9 @@ function Header(){
             </Logo>
             <NavBar/>
             <SideBar/>
+            <ScrollDownButton>
+                <RiArrowDownLine size="50px"/>
+            </ScrollDownButton>
         </HeaderS>
 
     )

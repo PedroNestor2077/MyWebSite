@@ -37,4 +37,6 @@ export const Body = styled.div`
     height:100%;
     width:100%;
     min-width:320px;
+    display:flex;
+    flex-direction:column;
 `;

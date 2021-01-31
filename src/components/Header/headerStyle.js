@@ -54,11 +54,7 @@ export const NavButton=styled.a`
     &:hover{
         color:gray;
     }
-    @media (max-width:450px){
-        &:hover{
-            color:white;
-        }
-    }
+    
 `;
 
 export const ColumnNav=styled.div`
@@ -116,5 +112,22 @@ export const SideBarS=styled.div`
     transition:all 1.5s;
     @media (max-width:600px){
         transform: translateX(-100px);
+    }
+`;
+export const ScrollDownButton=styled.a`
+    position:fixed;
+    bottom:0px;
+    left:50%;
+    align-items:center;
+    background-color:transparent;
+    width:auto;
+    margin-right:5%;
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+    transition:all .5s;
+    font-size:20px;
+    &:hover{
+        color:gray;
     }
 `;
