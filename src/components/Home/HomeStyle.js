@@ -7,7 +7,8 @@ export const HomeS=styled.div`
 	align-items:center;
 	justify-content:center;
 	background-color:transparent;
-	height:100vh;
+	height:100%;
+	min-height:430px;
 `;		
 export const HomeContainer=styled.div`
 	display:flex;
@@ -27,10 +28,10 @@ export const Title=styled.span`
 	font-family:sans-serif;
 `;
 export const CodeIcon=styled.span`
-	margin-right:20px;
+	margin-right:5px;
 	background-color:transparent;
-	width:30px;
-	height:30px;
+	width:40px;
+	height:40px;
 	color:rgba(0,191,255);
 	animation:example 18s infinite linear;
 	@keyframes example {

@@ -12,7 +12,7 @@ import {RiMenuLine,RiMenuUnfoldLine} from "react-icons/ri"
 /* THAT COMPONENT WILL BE RETURNED TO HEADER ON TRUE VALUE */
 
 function NavBar(){
-    const [Show,setShow]=useState("-200")
+    const [Show,setShow]=useState("-800")
     const [MenuIco,setMenuIco]=useState(<RiMenuLine size="35px"/>)
     return(
         <NavBarS>
@@ -70,14 +70,14 @@ function NavBar(){
                             Contato
                     </NavButton>
                 </ColumnNav>
-                <NavButton onClick={()=>{
+                <NavButton id="showMenu" onClick={()=>{
                     {/* that function make menu visible or not */}
                     var ico=""
-                    if (Show=="80"){
-                        setShow("-200")
+                    if (Show=="0"){
+                        setShow("-800")
                         ico=(<RiMenuLine size="35px"/>)
                     }else{
-                        setShow("80")
+                        setShow("0")
                         ico=(<RiMenuUnfoldLine size="35px"/>)
                     }
                     setMenuIco(ico)

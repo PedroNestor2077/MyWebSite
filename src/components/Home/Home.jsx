@@ -11,8 +11,8 @@ function Home(){
 		<HomeS>
 			<HomeContainer>
 				<Title>
-					<CodeIcon>
-						<RiCodeSSlashLine size="100%"/>
+					<CodeIcon id="ad" >
+						<img src="./images/ico_code.png" width="40px"/>
 					</CodeIcon>
 					<h2>Hi, i'm Pedro :)</h2>
 				</Title>
@@ -26,7 +26,7 @@ function Home(){
 							text={["#OPEN TO WORK","DESENVOLVEDOR FRONT-END","DESENVOLVEDOR REACT JS"]} 
 							speed={50} 
 							eraseSpeed={50} 
-							eraseDelay={500} 
+							eraseDelay={1500} 
 							typingDelay={1000}
 							/>
 					</span>

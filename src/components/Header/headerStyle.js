@@ -4,15 +4,14 @@ import styled from "styled-components"
 export const HeaderS=styled.div`
     display:flex;
     justify-content:center;
-    background-color:rgba(0,0,0,..5);
+    background-color:rgba(0,0,0,.0);
     width:100%;
     height:80px;
     margin:0px;
     padding:0px;
-    transition:border 3s linear;
+    transition:all .3s linear;
 
 `;
-
 export const Logo=styled.div`
     background-color:rgba(0,0,0,.0);
     width:350px;
@@ -53,24 +52,27 @@ export const NavButton=styled.a`
     font-size:20px;
     &:hover{
         color:gray;
-    }
-    
+    } 
 `;
 
 export const ColumnNav=styled.div`
     display:flex;
-    flex-wrap:wrap;
+    justify-content:flex-start;
     flex-direction:column;
-    justify-content:space-around;
     align-items:center;
-    background-color:rgba(0,0,0,.1);
-    position:absolute;
+    padding-top:80px;
+    position:fixed;
+    background-color:rgba(0,0,0,.6);
     width:auto;
-    height:200px;
+    height:100%;
     top:${props => `${props.margin}px`};
-    right:33px;
-    border-radius:10px;
+    right:0px;
     transition:all .2s;  
+    z-index:1;
+    @media (max-width:500px){
+        width:100%;
+        background-color:rgba(0,0,0,.9);
+    }
 `;
 
 export const InlineNav=styled.div`
@@ -85,8 +87,21 @@ export const InlineNav=styled.div`
 export const MenuHamburger=styled.div`
     margin-left:20px;
     margin-right:20px;
+    
     @media (min-width:1000px){
         display:none;
+    }
+    #showMenu{
+        position:relative;
+        border-bottom:none;
+        z-index:2;
+    }
+    a{
+        border-bottom:solid white 2px;
+        width:200px;
+        height:40px;
+        margin-right:0px;
+        padding-top:8px;
     }
 `;
 
@@ -114,10 +129,21 @@ export const SideBarS=styled.div`
         transform: translateX(-100px);
     }
 `;
-export const ScrollDownButton=styled.a`
+
+export const ScrollDownContainer=styled.div`
+    -webkit-writing-mode:vertical-lr;
     position:fixed;
     bottom:0px;
-    left:50%;
+    right:1%;
+    color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    height:auto;
+`;
+
+export const ScrollDownButton=styled.button`
     align-items:center;
     background-color:transparent;
     width:auto;
@@ -126,8 +152,18 @@ export const ScrollDownButton=styled.a`
     text-decoration:none;
     cursor:pointer;
     transition:all .5s;
+    margin-top:5px;
     font-size:20px;
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+    border:none;
     &:hover{
         color:gray;
+    }
+    animation:anima 1s infinite linear;
+    @keyframes anima {
+      from {-webkit-transform:translateY(-10px)}
+      to {-webkit-transform: translateY(0px)}
     }
 `;

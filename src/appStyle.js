@@ -4,7 +4,7 @@ import bg from "./background.jpg"
 
 export const AppS=styled.div`
     text-align: center;
-    height:auto;
+    height:100%;
     width:auto;
     display:flex;
     margin:0px;
@@ -13,6 +13,7 @@ export const AppS=styled.div`
 `;
 
 export const Background=styled.div`
+    position:fixed;
     width:100%;
     height:100%;
     margin:0px;
@@ -35,8 +36,8 @@ export const Body = styled.div`
     position:absolute;
     background-color:rgba(0,0,0,.6);
     height:100%;
+    min-height:100%;
     width:100%;
     min-width:320px;
-    display:flex;
-    flex-direction:column;
+    
 `;

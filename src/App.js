@@ -2,6 +2,7 @@ import {Body,AppS,Background,ImgBackground} from "./appStyle.js"
 import Header from "./components/Header/header"
 import SideBar from "./components/Header/sideBar"
 import Home from "./components/Home/Home"
+import Abbout from "./components/Abbout/abbout"
 function App() {
 
   return (
@@ -12,6 +13,7 @@ function App() {
       <Body>
         <Header/> 
         <Home/>
+        <Abbout/>
       </Body>
     </AppS>
   );
