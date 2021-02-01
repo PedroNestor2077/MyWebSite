@@ -4,7 +4,7 @@ import styled from "styled-components"
 export const HeaderS=styled.div`
     display:flex;
     justify-content:center;
-    background-color:rgba(0,0,0,.2);
+    background-color:rgba(0,0,0,..5);
     width:100%;
     height:80px;
     margin:0px;

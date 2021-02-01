@@ -11,9 +11,10 @@ export const HomeS=styled.div`
 `;		
 export const HomeContainer=styled.div`
 	display:flex;
-	margin-right:30%;
 	flex-direction:column;
-	justify-content:flex-start;
+	justify-content:center;
+	WIDTH:auto;
+	margin-bottom:10%;
 `;
 export const Title=styled.span`
 	display:flex;
@@ -21,24 +22,21 @@ export const Title=styled.span`
 	background-color:transparent;
 	width:auto;
 	height:50px;
-	font-size:25px;
+	font-size:110%;
 	color:white;
 	font-family:sans-serif;
-	
 `;
 export const CodeIcon=styled.span`
 	margin-right:20px;
 	background-color:transparent;
-	width:40px;
-	height:40px;
+	width:30px;
+	height:30px;
 	color:rgba(0,191,255);
 	animation:example 18s infinite linear;
 	@keyframes example {
 	  from {-webkit-transform: rotate(0deg)}
 	  to {-webkit-transform: rotate(360deg)}
 	}
-
-
 `;
 export const Text=styled.div`
 	font-family: "Source Code Pro";
@@ -47,44 +45,20 @@ export const Text=styled.div`
 	flex-direction:column;
 	justify-content:flex-start;
 	align-items:flex-start;
-	font-size:20px;
+	font-size:80%;
 	h3{
-		margin:10px;
-	}
-	/*JS ANIMATION PLUGGIN*/
-	.ml11 {
-		height:30px;
+		margin-top:20px;
+		margin-bottom:20px;
+	};
+	span{
+		margin-top:5px;
 		display:flex;
-		font-size:30px;
+		justify-content:flex-start;
+		align-items:flex-end;
 	}
-
-	.ml11 .text-wrapper {
-	  position: relative;
-	  left:8px;
-	  bottom:20px;
-	  width:100%;
-	  display: inline-block;
-	  
-	}
-
-	.ml11 .line {
-	  opacity: 0;
-	  position: absolute;
-	  left: 0;
-	  height: 100%;
-	  width: 3px;
-	  background-color: #fff;
-	  transform-origin: 0 50%;
-	}
-
-	.ml11 .line1 { 
-	  top: 0; 
-	  left: 0;
-	}
-
-	.ml11 .letter {
-	  display: inline-block;
-	  line-height: 1em;
+	#AnimattedText{
+		font-size:100%;
+		font-family: "SANS-SERIF";
 	}
 `;
 
