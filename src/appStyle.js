@@ -10,6 +10,7 @@ export const AppS=styled.div`
     margin:0px;
     padding:0px;
     min-width:320px;
+    min-height:580px;
 `;
 
 export const Background=styled.div`
@@ -33,10 +34,11 @@ export const ImgBackground=styled.div`
 `;
 
 export const Body = styled.div`
+    padding-top:20px;
     position:absolute;
     background-color:rgba(0,0,0,.6);
     height:100%;
-    min-height:100%;
+    min-height:500px;
     width:100%;
     min-width:320px;  
 `;

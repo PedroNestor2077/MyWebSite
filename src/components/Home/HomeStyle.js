@@ -8,7 +8,7 @@ export const HomeS=styled.div`
 	justify-content:center;
 	background-color:transparent;
 	height:100%;
-	min-height:430px;
+	min-height:100%;
 `;		
 export const HomeContainer=styled.div`
 	display:flex;
@@ -46,7 +46,7 @@ export const Text=styled.div`
 	flex-direction:column;
 	justify-content:flex-start;
 	align-items:flex-start;
-	font-size:80%;
+	font-size:14px;
 	h3{
 		margin-top:20px;
 		margin-bottom:20px;

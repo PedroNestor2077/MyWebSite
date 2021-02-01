@@ -10,6 +10,7 @@ export const HeaderS=styled.div`
     margin:0px;
     padding:0px;
     transition:all .3s linear;
+    position:fixed;
 
 `;
 export const Logo=styled.div`

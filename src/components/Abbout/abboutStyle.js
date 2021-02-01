@@ -25,36 +25,12 @@ export const Title=styled.div`
 		background-color:rgba(0,191,255,.9);
 	}
 	h2{
-		margin:0px;
+		margin:5px;
 	}
 `;
 
-export const SliderS=styled.div`
-	background-color:blue;
-	width:100%;
-	height:100vh;
-
-	#prevIten{
-		position:absolute;
-		bottom:-70%;
-		left:10px;
-	}
-	#nextIten{
-		position:absolute;
-		bottom:-70%;
-		right:10px;
-	}
-`;
-
-export const SetIten=styled.button`
-	border:none;
-	outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;
-    background-color:transparent;
-`;
-
-export const ItenLayoutS=styled.div`
+export const ContentS=styled.div`
+	margin-top:50px;
 	display:flex;
 	align-items:center;
 	justify-content:center;
@@ -71,7 +47,8 @@ export const ItenLayoutS=styled.div`
 			}
 		}
 		#text{
-			width:80%;
+			text-align:center;
+			width:95%;
 			height:auto;
 		}
 	}
@@ -87,8 +64,12 @@ export const ItenText=styled.div`
 	text-align:left;
 	align-items:flex-start;
 	color:white;
+	font-size:110%;
 	h2{
 		margin:0px;
+	}
+	p{
+		margin:10px;
 	}
 `;
 
@@ -100,9 +81,11 @@ export const ItenImg=styled.div`
 	width:40%;
 	height:100%;
 	img{
+		margin-top:50px;
 		margin-right:40px;
 		width:70%; 
 		height:70%;
+		max-width:320px;
+		max-height:420px;
 	}
-
 `;

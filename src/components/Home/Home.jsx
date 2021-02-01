@@ -6,7 +6,12 @@ import ReactTypingEffect from 'react-typing-effect';
 
 
 function Home(){
-
+	const text=
+	[
+	"#OPEN TO WORK",
+	"DESENVOLVEDOR FRONT-END",
+	"DESENVOLVEDOR REACT JS"
+	]
 	return(
 		<HomeS>
 			<HomeContainer>
@@ -23,7 +28,7 @@ function Home(){
 					<span>
 						<FiTerminal  id="TerminalIcon" size="20px"/>
 						<ReactTypingEffect id="AnimattedText"
-							text={["#OPEN TO WORK","DESENVOLVEDOR FRONT-END","DESENVOLVEDOR REACT JS"]} 
+							text={text} 
 							speed={50} 
 							eraseSpeed={50} 
 							eraseDelay={1500} 

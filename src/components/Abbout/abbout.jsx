@@ -1,6 +1,6 @@
 import React from 'react'
 import {AbboutS,Title} from "./abboutStyle.js"
-import ItenLayout from "./itenLayout"
+import Content from "./content"
 function Abbout(){
 	return(
 		<AbboutS>
@@ -8,7 +8,7 @@ function Abbout(){
 				<div>01</div>
 				<h2>Sobre</h2>
 			</Title>
-			<ItenLayout />
+			<Content />
 		</AbboutS>
 	)
 }
