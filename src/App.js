@@ -3,6 +3,7 @@ import Header from "./components/Header/header"
 import SideBar from "./components/Header/sideBar"
 import Home from "./components/Home/Home"
 import Abbout from "./components/Abbout/abbout"
+import Projects from "./components/Projects/projects"
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header/> 
         <Home/>
         <Abbout/>
+        <Projects/>
       </Body>
     </AppS>
   );
