@@ -14,7 +14,7 @@ function App() {
       <Body>
         <Header/> 
         <Home/>
-        <Abbout/>
+        <Abbout />
         <Projects/>
       </Body>
     </AppS>

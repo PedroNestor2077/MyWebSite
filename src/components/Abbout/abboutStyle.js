@@ -4,11 +4,23 @@ export const AbboutS=styled.div`
 	display:flex;
 	flex-direction:column;
 	background-color:rgba(0,0,10,.98);
+	align-items:center;
 	width:100%;
 	height:auto;
 	#fade{
 		width:100%;
 		height:100%;
+	}
+	span{
+		display:flex;
+		justify-content:space-between;
+		width:200px;
+		#Drum		{
+			border-bottom:solid rgb(0,191,255) ${props => `${props.borderDrum}px`};
+		}
+		#Prog{
+			border-bottom:solid rgb(0,191,255) ${props => `${props.borderProg}px`};
+		}
 	}
 `;
 
@@ -34,13 +46,13 @@ export const Title=styled.div`
 `;
 
 export const ProgramerS=styled.div`
-	opacity:1;
-	margin-top:50px;
+	
 	display:flex;
 	align-items:center;
 	justify-content:center;
 	width:100%;
 	height:100%;
+	animation:fadeIn 2s;
 	@media (max-width:800px){
 		flex-direction:column;
 		height:auto;
@@ -58,12 +70,17 @@ export const ProgramerS=styled.div`
 			height:auto;
 		}
 	}
-	transition: opacity 300ms linear;
-
+	@keyframes fadeIn{
+		from{
+			opacity:0;
+		}
+		to{
+			opacity:1;
+		}
+	}	
 `;
 
 export const DrummerS=styled.div`
-	margin-top:50px;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -78,6 +95,15 @@ export const DrummerS=styled.div`
 	}
 	p{
 		margin:10px;
+	}
+	animation:fadeIn 2s;
+	@keyframes fadeIn { 
+		from{
+			opacity:0;
+		}
+		to{
+			opacity:1;
+		}
 	}
 `;
 
@@ -138,4 +164,15 @@ export const ItenImg=styled.div`
 		width:430px;
 		height:520px;
 	}
+`;
+
+export const AbboutButton=styled.button`
+	background-color:transparent;
+	border:none;
+	width:70px;
+	color:white;
+	cursor:pointer;
+	outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
 `;

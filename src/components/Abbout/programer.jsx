@@ -2,11 +2,11 @@ import React from 'react'
 import {ProgramerS,ItenText,ItenImg} from "./abboutStyle.js"
 import {CSSTransition} from 'react-transition-group';
 
-function Programer(){
+function Programer(props){
 	
 	return(
 		<CSSTransition className="teste" in={true} appear={true}>
-			<ProgramerS >
+			<ProgramerS opacity={props.opacity}>
 				<ItenImg id="img">
 							<img src="./images/programer.png" alt="MyPhoto"></img>
 					</ItenImg>

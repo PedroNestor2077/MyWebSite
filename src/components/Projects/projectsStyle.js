@@ -10,14 +10,22 @@ export const ProjectsS=styled.div`
 `;
 
 export const ProjectBoxS=styled.div`
-	background-color:gray;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
 	width:49%;
 	height:50%;
 	min-width:450px;
 	min-height:520px;
 	max-width:646px;
-	border:solid 1px red;
+	border:solid 1px white;
 	h1{color:red;}
+	img{
+		width:320px;
+		height:210px;
+		border-bottom:solid 2px white;
+	}
 `;
 
 export const ProjectListS=styled.div`
@@ -50,4 +58,10 @@ export const Title=styled.div`
 	h2{
 		margin:5px;
 	}
+`;
+
+export const ProjectInfo=styled.div`
+	text-align:left;
+	background-color:gray;
+	width:80%
 `;
