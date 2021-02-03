@@ -31,7 +31,7 @@ export const ProjectListS=styled.div`
 `;
 
 export const Title=styled.div`
-	margin-top:100px;
+	margin-top:50px;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;

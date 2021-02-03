@@ -6,6 +6,10 @@ export const AbboutS=styled.div`
 	background-color:rgba(0,0,10,.98);
 	width:100%;
 	height:auto;
+	#fade{
+		width:100%;
+		height:100%;
+	}
 `;
 
 export const Title=styled.div`
@@ -29,16 +33,18 @@ export const Title=styled.div`
 	}
 `;
 
-export const ContentS=styled.div`
+export const ProgramerS=styled.div`
+	opacity:1;
 	margin-top:50px;
 	display:flex;
 	align-items:center;
 	justify-content:center;
 	width:100%;
 	height:100%;
-	@media (max-width:720px){
+	@media (max-width:800px){
 		flex-direction:column;
 		height:auto;
+		margin-top:20px;
 		#img{
 			justify-content:center;
 			width:100%;
@@ -51,6 +57,53 @@ export const ContentS=styled.div`
 			width:95%;
 			height:auto;
 		}
+	}
+	transition: opacity 300ms linear;
+
+`;
+
+export const DrummerS=styled.div`
+	margin-top:50px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	height:100%;
+	color:white;
+	font-size:110%;
+	text-align:center;
+	h2{
+		margin:0px;
+	}
+	p{
+		margin:10px;
+	}
+`;
+
+export const IteniFrame=styled.div`
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	background-color:transparent;
+	width:100%;
+	height:100%;
+	text-align:left;
+	align-items:center;
+	
+`;
+export const ItenImgDrummer=styled.div`
+	display:flex;
+	justify-content:center;
+	background-color:transparent;
+	align-items:center;
+	width:100%;
+	height:100%;
+	img{
+		justify-content:center;
+		width:100%;
+		max-width:700px;
+		height:auto;
 	}
 `;
 
@@ -78,14 +131,11 @@ export const ItenImg=styled.div`
 	justify-content:flex-end;
 	background-color:transparent;
 	align-items:center;
-	width:40%;
+	width:50%;
 	height:100%;
 	img{
-		margin-top:50px;
-		margin-right:40px;
-		width:80%; 
-		height:80%;
-		max-width:400px;
-		max-height:520px;
+		margin-left:30px;
+		width:430px;
+		height:520px;
 	}
 `;

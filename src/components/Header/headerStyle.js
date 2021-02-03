@@ -126,7 +126,7 @@ export const SideBarS=styled.div`
     width:35px;
     background-color:transparent;
     transition:all 1.5s;
-    @media (max-width:600px){
+    @media (max-width:900px){
         transform: translateX(-100px);
     }
 `;

@@ -37,3 +37,10 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background:white;
 }
+.teste-appear{
+  opacity:0;
+}
+.teste-appear.teste-appear-active{
+  opacity:1;
+  transition: opacity 300ms linear;
+}
