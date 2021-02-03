@@ -6,7 +6,7 @@ function Content(){
 	return(
 		<ContentS>
 			<ItenImg id="img">
-				<img src="./images/myPhoto.jpg"></img>
+				<img src="./images/acorda8.png"></img>
 			</ItenImg>
 			<ItenText id="text">
 				<h2>Pedro Nestor</h2>

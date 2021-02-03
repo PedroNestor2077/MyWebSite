@@ -83,9 +83,9 @@ export const ItenImg=styled.div`
 	img{
 		margin-top:50px;
 		margin-right:40px;
-		width:70%; 
-		height:70%;
-		max-width:320px;
-		max-height:420px;
+		width:80%; 
+		height:80%;
+		max-width:400px;
+		max-height:520px;
 	}
 `;
