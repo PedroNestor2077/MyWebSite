@@ -1,9 +1,8 @@
 import React from 'react'
 import {ProjectBoxS,ProjectInfo} from "./projectsStyle.js"
-
+import ImgSlider from "./imgSlider"
 
 function ProjectBox(props){
-
 	return(
 		<ProjectBoxS color={props.color}>
 			<ProjectInfo>
@@ -17,7 +16,7 @@ function ProjectBox(props){
 
 				</ul>
 			</ProjectInfo>
-			<img src="./images/project-images/tiktim.png" width="500px"></img>
+			<ImgSlider images={props.images}/>
 		</ProjectBoxS>
 	)
 }

@@ -1,15 +1,20 @@
 import React from 'react'
-import {ProjectsS,Title} from "./projectsStyle.js"
-import ProjectList from "./projectList"
-
+import {ProjectsS,Title,Wrapper} from "./projectsStyle.js"
+import ProjectBox from "./projectBox"
 function Projects(){
+	const Images=["./images/project-images/tiktim.png","./images/project-images/acorda.png"]
 	return(
 		<ProjectsS>
-			<Title>
+			<Title >
 				<div>02</div>
 				<h2>Projetos</h2>
 			</Title>
-			<ProjectList/>
+			<Wrapper id="wrapper">
+				<ProjectBox images={Images}></ProjectBox>
+				<ProjectBox images={Images}></ProjectBox>
+				<ProjectBox images={Images}></ProjectBox>
+				<ProjectBox images={Images}></ProjectBox>
+			</Wrapper>
 		</ProjectsS>
 	)
 }

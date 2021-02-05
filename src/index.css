@@ -37,3 +37,10 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background:white;
 }
+
+#wrapper::-webkit-scrollbar {
+    height:5px;
+}
+#wrapper::-webkit-scrollbar-thumb {
+  background:rgb(0,191,255);
+}

@@ -59,7 +59,7 @@ export const ProgramerS=styled.div`
 		margin-top:20px;
 		#img{
 			justify-content:center;
-			width:100%;
+			width:90%;
 			img{
 				margin-right:0px;
 			}
@@ -70,14 +70,7 @@ export const ProgramerS=styled.div`
 			height:auto;
 		}
 	}
-	@keyframes fadeIn{
-		from{
-			opacity:0;
-		}
-		to{
-			opacity:1;
-		}
-	}	
+	
 `;
 
 export const DrummerS=styled.div`
