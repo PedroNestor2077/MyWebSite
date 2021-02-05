@@ -2,12 +2,12 @@ import styled from "styled-components"
 
 export const ProjectsS=styled.div`
 	display:flex;
-	flex-wrap:wrap;
+	flex-direction:column;
+	align-items:center;
 	justify-content:center;
 	background-color:rgba(0,0,10,.98);
 	width:100%;
 	height:auto;
-	
 `;
 
 export const ProjectBoxS=styled.div`
@@ -28,16 +28,6 @@ export const ProjectBoxS=styled.div`
 		height:210px;
 		border-bottom:solid 2px white;
 	}
-`;
-
-export const ProjectListS=styled.div`
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:center;
-	background-color:transparent;
-	width:100%;
-	height:100%;
-	color:white;
 `;
 
 export const Title=styled.div`
@@ -65,8 +55,10 @@ export const Title=styled.div`
 export const ProjectInfo=styled.div`
 	text-align:left;
 	background-color:transparent;
-	width:80%
+	width:80%;
+	font-size:15px;
 `;
+
 export const Wrapper=styled.div`
 	display:flex;
 	width:90%;
@@ -75,19 +67,25 @@ export const Wrapper=styled.div`
 `;
 
 export const ImgSliderS=styled.div`
-	background-color:gray;
+	background-color:transparent;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+
+	.MuiFormGroup-root{
+		flex-direction:row;
+		color:white;
+	}
+	.MuiSvgIcon-root{
+		color:white;
+	}
 `;
 
 export const Image=styled.div`
-	background-color:blue;
+	background-color:transparent;
+	img{
+		width:350px;
+	}
 `;
 
-export const SwitcherS=styled.button`
-	color:white;
-	background-color:transparent;
-	border:none;
-	cursor:pointer;
-	outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;
-`;

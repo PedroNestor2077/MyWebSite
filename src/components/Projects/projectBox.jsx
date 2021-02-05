@@ -8,12 +8,11 @@ function ProjectBox(props){
 			<ProjectInfo>
 				<h2>{props.title}</h2>
 				<ul>
-					<li><a href={props.surce}>Ver código fonte</a></li>
 					<li>{props.goals}</li>
+					<li><a href={props.surce}>Ver código fonte</a></li>
 					<li>{props.tecnology}</li>
 					<li>{props.date}</li>
 					<li>{props.status}</li>
-
 				</ul>
 			</ProjectInfo>
 			<ImgSlider images={props.images}/>
