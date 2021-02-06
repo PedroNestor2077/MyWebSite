@@ -14,10 +14,10 @@ function App() {
         <ImgBackground/>
       </Background> 
       <Body>
-        {/*<Header/> 
-                <Home/>
-                <Abbout />
-                <Projects/>*/}
+        <Header/> 
+        <Home/>
+        <Abbout />
+        <Projects/>
         <Contact/>
 
       </Body>

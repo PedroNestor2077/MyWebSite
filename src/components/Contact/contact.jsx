@@ -1,5 +1,5 @@
 import React from 'react'
-import {ContactS,ContactList} from './contactStyle.js'
+import {ContactS,ContactList,OtherContacts} from './contactStyle.js'
 import {Title} from "../Projects/projectsStyle"
 import Email from "./email"
 function Contact(){
@@ -9,12 +9,15 @@ function Contact(){
 				<div>03</div>
 				<h2>Contato</h2>
 			</Title>
-			<Email/>
+			<h3>Me envie uma mensagem! estou sempre online :)</h3>
 			<ContactList>
-				<a>Envie um email</a>
-				<a>WhatsApp: (xx)y yyyyyyyy</a>
-				<a>Instagram - @pedro_yyy</a>
-				<a>contato.pedronestor@gmail.com</a>
+				<Email/>
+				<OtherContacts>
+					<a>WhatsApp: (xx)y yyyyyyyy</a>
+					<a>Instagram - @pedro_yyy</a>
+					<a>contato.pedronestor@gmail.com</a>
+				</OtherContacts>
+				
 			</ContactList>		
 		</ContactS>
 		)
