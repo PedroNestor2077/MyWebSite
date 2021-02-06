@@ -15,7 +15,7 @@ function ProjectBox(props){
 					<li>{props.status}</li>
 				</ul>
 			</ProjectInfo>
-			<ImgSlider images={props.images}/>
+			<ImgSlider id="projectImage" images={props.images}/>
 		</ProjectBoxS>
 	)
 }

@@ -8,8 +8,8 @@ function Programer(props){
 		<CSSTransition className="teste" in={true} appear={true}>
 			<ProgramerS opacity={props.opacity}>
 				<ItenImg id="img">
-							<img src="./images/programer.png" alt="MyPhoto"></img>
-					</ItenImg>
+							<img src="./images/programer.png" alt="MyPhoto" width='100%'></img>
+				</ItenImg>
 				<ItenText id="text">
 					<h2>Pedro Nestor</h2>
 					<p>

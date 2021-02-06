@@ -18,16 +18,11 @@ export const ProjectBoxS=styled.div`
 	justify-content:center;
 	width:100%;
 	height:auto;
-	max-width:500px;
 	text-align:justify;
 	color:white;
 	background-color:rgba(255,255,255,.1);
-	h1{color:red;}
-	img{
-		width:320px;
-		height:210px;
-		border-bottom:solid 2px white;
-	}
+	
+	
 `;
 
 export const Title=styled.div`
@@ -56,7 +51,19 @@ export const ProjectInfo=styled.div`
 	text-align:left;
 	background-color:transparent;
 	width:80%;
-	font-size:15px;
+	font-size:5px;
+	display:flex;
+	flex-direction:column;
+	@media(max-width:800px){
+		width:100%;
+
+	}
+	ul{
+		margin:0px;
+	}
+	h2{
+		margin:0px;
+	}
 `;
 
 export const Wrapper=styled.div`
@@ -64,6 +71,10 @@ export const Wrapper=styled.div`
 	width:90%;
 	overflow-x:auto;
 	border-radius:5px;
+	@media(max-width:800px){
+		width:100%;
+
+	}
 `;
 
 export const ImgSliderS=styled.div`
@@ -72,7 +83,7 @@ export const ImgSliderS=styled.div`
 	flex-direction:column;
 	align-items:center;
 	justify-content:center;
-
+	width:60%;
 	.MuiFormGroup-root{
 		flex-direction:row;
 		color:white;
@@ -85,7 +96,8 @@ export const ImgSliderS=styled.div`
 export const Image=styled.div`
 	background-color:transparent;
 	img{
-		width:350px;
+		width:100%;
 	}
+
 `;
 

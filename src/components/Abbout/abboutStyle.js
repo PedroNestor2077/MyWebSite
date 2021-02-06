@@ -59,9 +59,10 @@ export const ProgramerS=styled.div`
 		margin-top:20px;
 		#img{
 			justify-content:center;
-			width:90%;
+			
 			img{
 				margin-right:0px;
+				width:300px;
 			}
 		}
 		#text{
@@ -153,7 +154,7 @@ export const ItenImg=styled.div`
 	width:50%;
 	height:100%;
 	img{
-		margin-left:30px;
+		margin-left:0px;
 		width:430px;
 		height:520px;
 	}

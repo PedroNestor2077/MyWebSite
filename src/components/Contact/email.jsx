@@ -66,7 +66,7 @@ function Email(){
 
 
 	return(
-		<EmailS>
+		<EmailS id="emailContainer">
 			<EmailForm action={sendEmail}/>
 			{Load}
 			<Notfy 

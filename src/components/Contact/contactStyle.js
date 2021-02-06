@@ -20,9 +20,16 @@ export const ContactList=styled.div`
 	align-items:center;
 	height:auto;
 	border-radius:10px;
-
 	a{
 		margin:20px;
+	}
+	@media(max-width:800px){
+		flex-direction:column;
+		width:100%;
+		#emailContainer{
+			width:100%
+		}
+
 	}
 `;
 
@@ -53,7 +60,8 @@ export const OtherContacts=styled.div`
 	flex-direction:column;
 	align-items:center;
 	justify-content:center;
-	width:50%;
+	width:100%;
+	
 `;
 
 export const Loading=styled.div`
