@@ -6,15 +6,16 @@ import { Backdrop } from '@material-ui/core';
 import { CircularProgress } from '@material-ui/core';
 
 function Email(){
-	let form=document.getElementById('EmailForm')
-	form.reset()
+
 	const [Load,setLoad]=useState('')
 	const [Show,setShow]=useState({
-		color:'red',
+		color:'green',
 		msg: 'Mensagem enviada com sucesso!',
-		show: 0
+		show: -80
 	})
 	function sendEmail(e) {
+		let form=document.getElementById('EmailForm')
+		form.reset()
 		setLoad(
 			<Loading>
 				<CircularProgress color="inherit" />

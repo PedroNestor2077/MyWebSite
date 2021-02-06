@@ -5,6 +5,7 @@ import Home from "./components/Home/Home"
 import Abbout from "./components/Abbout/abbout"
 import Projects from "./components/Projects/projects"
 import Contact from "./components/Contact/contact"
+import Footer from "./components/Footer/footer"
 function App() {
 
   return (
@@ -19,7 +20,7 @@ function App() {
         <Abbout />
         <Projects/>
         <Contact/>
-
+        <Footer/>
       </Body>
     </AppS>
   );

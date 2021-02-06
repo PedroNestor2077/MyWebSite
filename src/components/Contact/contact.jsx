@@ -13,7 +13,7 @@ function Contact(){
 			<ContactList>
 				<Email/>
 				<OtherContacts>
-					<a>WhatsApp: (xx)y yyyyyyyy</a>
+					<a href="https://web.whatsapp.com/send?phone=5535997412678" target="_blank">WhatsApp: (xx)y yyyyyyyy</a>
 					<a>Instagram - @pedro_yyy</a>
 					<a>contato.pedronestor@gmail.com</a>
 				</OtherContacts>
