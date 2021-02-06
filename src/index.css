@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Source+Code+Pro:wght@300&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 body {
   min-width:320px;
   margin:0px;

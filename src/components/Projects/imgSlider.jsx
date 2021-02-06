@@ -21,7 +21,7 @@ function ImgSlider(props){
 			<Image>
 				<img src={Img}></img>
 			</Image>
-			<FormControl component="fieldset">
+			<FormControl component="fieldset" >
 			  <RadioGroup aria-label="gender" name="gender1" >
 			    <FormControlLabel 
 			    	value={props.images[0]} 

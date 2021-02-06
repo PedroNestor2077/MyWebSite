@@ -117,7 +117,7 @@ export const MidiaNav=styled.span`
 `;
 
 export const SideBarS=styled.div`
-    position:fixed;
+    position:absolute;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
@@ -131,40 +131,3 @@ export const SideBarS=styled.div`
     }
 `;
 
-export const ScrollDownContainer=styled.div`
-    -webkit-writing-mode:vertical-lr;
-    position:fixed;
-    bottom:0px;
-    right:1%;
-    color:white;
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    align-items:center;
-    height:auto;
-`;
-
-export const ScrollDownButton=styled.button`
-    align-items:center;
-    background-color:transparent;
-    width:auto;
-    margin-right:5%;
-    color:white;
-    text-decoration:none;
-    cursor:pointer;
-    transition:all .5s;
-    margin-top:5px;
-    font-size:20px;
-    outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;
-    border:none;
-    &:hover{
-        color:gray;
-    }
-    animation:anima 1s infinite linear;
-    @keyframes anima {
-      from {-webkit-transform:translateY(-10px)}
-      to {-webkit-transform: translateY(0px)}
-    }
-`;

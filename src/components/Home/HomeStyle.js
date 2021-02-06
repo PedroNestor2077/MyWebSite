@@ -63,3 +63,28 @@ export const Text=styled.div`
 	}
 `;
 
+export const ScrollDownButton=styled.button`
+	position:absolute;
+	bottom:00px;
+	outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+    background-color:transparent;
+    width:60px;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+    border:none;
+    animation:downButtonAnimation 1s infinite;
+    animation-direction:alternate;
+	@keyframes downButtonAnimation{
+		from{
+			bottom:0px;
+			color:rgb(0,191,255);
+		}
+		to{
+			color:white;
+			bottom:30px;
+		}
+	} 
+`;

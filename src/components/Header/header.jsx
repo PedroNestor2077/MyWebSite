@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
-import {HeaderS,Logo,ImgLogo,ScrollDownButton,ScrollDownContainer} from "./headerStyle.js"
-import SideBar from "./sideBar"
+import {HeaderS,Logo,ImgLogo} from "./headerStyle.js"
 import NavBar from "./navBar"
 import {RiArrowDownLine} from "react-icons/ri"
 
@@ -24,7 +23,6 @@ function Header(){
         }
         setPrevScroll(window.scrollY)
     };
-
     var logo="images/logoSite.png"
     return(
         <HeaderS id="teste1">
@@ -33,13 +31,8 @@ function Header(){
                 </ImgLogo>
             </Logo>
             <NavBar/>
-            <SideBar/>
-            <ScrollDownContainer>
-                <label for="scrollbutton">Avançar</label>
-                <ScrollDownButton href="facebook.com" id="scrollbutton">
-                    <RiArrowDownLine size="20px"/>
-                </ScrollDownButton>
-            </ScrollDownContainer>
+            
+            
         </HeaderS>
 
     )

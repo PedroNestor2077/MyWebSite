@@ -59,15 +59,15 @@ export const ProgramerS=styled.div`
 		margin-top:20px;
 		#img{
 			justify-content:center;
-			
+			width:100%;
 			img{
-				margin-right:0px;
-				width:300px;
+				width:100%;
+				min-width:300px;
 			}
 		}
 		#text{
 			text-align:center;
-			width:95%;
+			width:100%;
 			height:auto;
 		}
 	}
@@ -155,8 +155,9 @@ export const ItenImg=styled.div`
 	height:100%;
 	img{
 		margin-left:0px;
-		width:430px;
-		height:520px;
+
+		max-width:430px;
+		max-height:520px;
 	}
 `;
 

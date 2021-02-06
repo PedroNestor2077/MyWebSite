@@ -5,12 +5,13 @@ import bg from "./background.jpg"
 export const AppS=styled.div`
     text-align: center;
     height:100%;
-    width:100vw;
+    width:100%;
     display:flex;
     margin:0px;
     padding:0px;
     min-width:320px;
     min-height:580px;
+    transition:scroll 2s;
 `;
 
 export const Background=styled.div`
@@ -39,6 +40,6 @@ export const Body = styled.div`
     background-color:rgba(0,0,0,.6);
     height:100%;
     min-height:500px;
-    width:100vw;
+    width:100%;
     min-width:320px;  
 `;

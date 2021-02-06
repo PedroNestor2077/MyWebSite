@@ -13,14 +13,26 @@ export const FooterS=styled.div`
 		margin:0px;
 	}
 	button{
-		height:100%;
-		 outline: thin dotted;
+		position:relative;
+		outline: thin dotted;
 	    outline: 0px auto -webkit-focus-ring-color;
 	    outline-offset: 0px;
 	    border:none;
 	    background-color:transparent;
 	    color:white;
 	    cursor:pointer;
+	    animation:UpButtonAnimation 1s infinite;
+	    animation-direction:alternate;
+	    @keyframes UpButtonAnimation{
+	    	from{
+	    		top:-20px;
+	    		color:rgb(0,191,255)
+	    	}
+	    	to{
+	    		top:10px;
+
+	    	}
+	    }
 	}
 
 `;
