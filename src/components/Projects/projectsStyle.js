@@ -21,8 +21,7 @@ export const ProjectBoxS=styled.div`
 	text-align:justify;
 	color:white;
 	background-color:rgba(255,255,255,.1);
-	
-	
+		
 `;
 
 export const Title=styled.div`
@@ -58,18 +57,30 @@ export const ProjectInfo=styled.div`
 		width:100%;
 
 	}
-
 `;
 
 export const Wrapper=styled.div`
+
 	display:flex;
-	width:90%;
-	overflow-x:auto;
+	width:700px;
+	position:relative;
+	overflow-x:hidden;
 	border-radius:5px;
 	@media(max-width:800px){
 		width:100%;
-
 	}
+
+	#prev{
+		left:0px;
+	}
+	#next{
+		right:0px;
+	}
+`;
+
+export const ProjectList=styled.div`
+	display:inline-block;
+	width:${props=> `${props.width}px`}
 `;
 
 export const ImgSliderS=styled.div`
@@ -81,7 +92,7 @@ export const ImgSliderS=styled.div`
 	.MuiFormGroup-root{
 		flex-direction:row;
 		color:white;
-	}
+	} ''
 	.MuiSvgIcon-root{
 		color:white;
 	}
@@ -95,5 +106,20 @@ export const Image=styled.div`
 		min-width:300px;
 	}
 
+`;
+
+export const HandleButton=styled.button`
+	background-color:transparent;
+	position:absolute;
+	height:100%;
+	outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+    background-color:transparent;
+    width:60px;
+    border-radius:5px;
+    color:red;
+    cursor:pointer;
+    border:none;
 `;
 
