@@ -79,7 +79,7 @@ export const ProjectList=styled.div`
 	display:flex;
 	justify-content:flex-start;
 	margin-left:${props=>`${props.margin}px`};
-	transition:all ease .5s;
+	transition:all ease .4s;
 `;
 
 export const ImgSliderS=styled.div`
@@ -100,6 +100,8 @@ export const ImgSliderS=styled.div`
 
 export const Image=styled.div`
 	background-color:transparent;
+	overflow-x:hidden;
+	width:300px;
 	img{
 		width:300px;
 		min-width:300px;

@@ -1,8 +1,9 @@
 import React from 'react'
-import {ProjectBoxS,ProjectInfo} from "./projectsStyle.js"
+import {ProjectBoxS,ProjectInfo,ProjectList} from "./projectsStyle.js"
 import ImgSlider from "./imgSlider"
 
 function ProjectBox(props){
+
 	return(
 		<ProjectBoxS color={props.color} id="box">
 			<ProjectInfo>
@@ -15,7 +16,8 @@ function ProjectBox(props){
 					<li>{props.status}</li>
 				</ul>
 			</ProjectInfo>
-			<ImgSlider id="projectImage" images={props.images}/>
+			<ImgSlider></ImgSlider>
+			
 		</ProjectBoxS>
 	)
 }

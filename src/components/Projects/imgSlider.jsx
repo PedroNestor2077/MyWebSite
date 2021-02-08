@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-import {ImgSliderS,Image} from "./projectsStyle.js"
+import {ImgSliderS,Image,ProjectList} from "./projectsStyle.js"
 import {IoIosRadioButtonOff,IoIosRadioButtonOn} from "react-icons/io"
 import { Radio,RadioGroup } from '@material-ui/core';
 import { FormControl } from '@material-ui/core';
@@ -12,35 +12,43 @@ function ImgSlider(props){
 
 	function changeImg(event){
 		let value=event.target.value
-		setImg(value)
+		setBoxMargin(value*-300)
+		
 	};
-	const [Img,setImg]=useState(props.images[0])
+
+	const [BoxMargin,setBoxMargin]=useState(-600)
 	
 	return(
 		<ImgSliderS>
 			<Image>
-				<img src={Img}></img>
+				<ProjectList margin={BoxMargin}>
+					<img src="./images/project-images/tiktim.png" width="300px"></img>
+					<img src="./images/project-images/acorda.png" width="300px"></img>
+					<img src="./images/project-images/estoque.png" width="300px"></img>
+				</ProjectList>
 			</Image>
 			<FormControl component="fieldset" >
 			  <RadioGroup aria-label="gender" name="gender1" >
 			    <FormControlLabel 
-			    	value={props.images[0]} 
 			    	control={
 			    		<Radio 
+			    			value={0}
 			    			size='small' 
 			    			color='primary' 
 			    	/>}onClick={changeImg}  />
 			    <FormControlLabel 
-			    	value={props.images[1]} 
+			    	
 			    	control={
-			    		<Radio 
+			    		<Radio
+			    			value={1} 
 			    			size='small'
 			    			 color='primary' 
 			    			/>}onClick={changeImg} />
 			    <FormControlLabel 
-			    	value={props.images[2]} 
+			    	
 			    	control={
 			    		<Radio 
+			    		value={2}
 			    		size='small' 
 			    		color='primary' 
 			    />} onClick={changeImg} />
