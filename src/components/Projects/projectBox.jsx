@@ -5,8 +5,8 @@ import ImgSlider from "./imgSlider"
 function ProjectBox(props){
 
 	return(
-		<ProjectBoxS color={props.color} id="box">
-			<ProjectInfo>
+		<ProjectBoxS id="box">
+			<ProjectInfo id="ProjectInfo">
 				<h2>{props.title}</h2>
 				<ul>
 					<li>{props.goals}</li>
@@ -16,8 +16,7 @@ function ProjectBox(props){
 					<li>{props.status}</li>
 				</ul>
 			</ProjectInfo>
-			<ImgSlider></ImgSlider>
-			
+			<ImgSlider/>
 		</ProjectBoxS>
 	)
 }

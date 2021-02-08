@@ -1,5 +1,5 @@
 import React from 'react'
-import {DrummerS,IteniFrame,ItenImgDrummer} from "./abboutStyle.js"
+import {DrummerS,ItenImgDrummer} from "./abboutStyle.js"
 
 function Drummer(){
 	

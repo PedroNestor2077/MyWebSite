@@ -1,54 +1,30 @@
 import React,{useState} from 'react'
-import {ProjectsS,Title,Wrapper,HandleButton,ProjectList} from "./projectsStyle.js"
+import {ProjectsS,Wrapper,HandleButton,ProjectList} from "./projectsStyle.js"
+import {Title} from '../genericStyles.js'
 import ProjectBox from "./projectBox"
 import {GrNext,GrPrevious} from 'react-icons/gr'
+import {ProjectImages} from "../ImgSurce.js"
 function Projects(){
-		/*this window resize controls the project slide margin.*/
 	window.onresize=()=>{
 		setBoxMargin(0)
 	}
-
+	/* this functions make the slider work*/
 	function Next(){
 		let boxSize=(document.getElementById('box')).clientWidth
 		const maxMargin=(boxSize*3)
-		console.log(maxMargin)
 		if (BoxMargin!==(maxMargin*-1)){
 			setBoxMargin(BoxMargin-boxSize)
 		}
-
 	}
 	function Prev(){
 		let boxSize=(document.getElementById('box')).clientWidth
 		const maxMargin=(boxSize*3)
-		console.log(maxMargin)
 		if (BoxMargin!==0){
 			setBoxMargin(BoxMargin+boxSize)
 		}
 	}
 
 	const [BoxMargin,setBoxMargin]=useState(0)
-	
-	const Images1=[
-		"./images/project-images/tiktim.png",
-		"./images/project-images/home.gif",
-		"./images/project-images/tiktim.png"
-	]
-	const Images2=[
-		"./images/project-images/acorda.png",
-		"./images/project-images/acorda.gif",
-		"./images/project-images/acorda.png"
-	]
-	const Images3=[
-		"./images/project-images/estoque.png",
-		"./images/project-images/estoque.png",
-		"./images/project-images/estoque.png"
-	]
-	const Images4=[
-		"./images/project-images/cadastro.png",
-		"./images/project-images/cadastro.png",
-		"./images/project-images/cadastro.png"
-	]
-	
 
 	return(
 
@@ -66,8 +42,7 @@ function Projects(){
 				</HandleButton>
 				<ProjectList margin={BoxMargin}>
 					<ProjectBox 
-						className="projectBox"
-						images={Images1}
+						images={ProjectImages.tiktim}
 						title="Site TIKTIM"
 						surce="https://github.com/PedroNestor2077/TikTim-SITE"
 						goals="Site de Apresentação dos produtos tiktim"
@@ -76,8 +51,7 @@ function Projects(){
 						status="Finalizado"
 					></ProjectBox>
 					<ProjectBox 
-						className="projectBox"
-						images={Images2}
+						images={ProjectImages.acordaNet}
 						title="Acorda.net"
 						goals="WebApp com dispertador,timer e cronômetro"
 						surce="https://github.com/PedroNestor2077/Acorda.net"
@@ -86,8 +60,7 @@ function Projects(){
 						status="Finalizado"
 					></ProjectBox>
 					<ProjectBox 
-						className="projectBox"
-						images={Images3}
+						images={ProjectImages.utitlitarioTiktim}
 						title="Utilitário TIKTIM"
 						goals='Programa de controle de produção e gestao'
 						surce="https://github.com/PedroNestor2077/Utilitario-Tiktim"
@@ -96,8 +69,7 @@ function Projects(){
 						status="Finalizado"
 					></ProjectBox>
 					<ProjectBox 
-						className="projectBox"
-						images={Images4}
+						images={ProjectImages.cadastro}
 						title="Cadastro GiveUp"
 						goals="Sistema de cadastro e controle de usuários"
 						surce="https://github.com/PedroNestor2077/Prova2SOW"

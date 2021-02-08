@@ -1,14 +1,14 @@
 import React,{useState} from 'react'
-import {AbboutS,Title,AbboutButton} from "./abboutStyle.js"
+import {AbboutS,AbboutButton} from "./abboutStyle.js"
 import Programer from "./programer"
 import Drummer from "./drummer"
-import { TransitionGroup} from 'react-transition-group';
 import {GiDrum} from "react-icons/gi"
 import {AiOutlineCode} from "react-icons/ai"
+import {Title} from "../genericStyles.js"
 
-function Abbout(props){
-	const [inProp, setInProp] = useState(false);
-	const [Content,setContent]=useState(<Programer/>)
+function Abbout(){
+	const AbboutPages=[<Programer/>,<Drummer/>]
+	const [Content,setContent]=useState(AbboutPages[0])
 	const [BorderDrum,setBorderDrum]=useState(0)
 	const [BorderProg,setBorderProg]=useState(3)
 	return(
@@ -21,21 +21,19 @@ function Abbout(props){
 				<AbboutButton 
 					id="Prog"
 					onClick={()=>{
-						setContent(<Programer opacity={1}/>)
+						setContent(AbboutPages[0])
 						setBorderDrum(0)
 						setBorderProg(3)
-					}
-					}>
+					}}>
 					<AiOutlineCode size="100%"/>
 				</AbboutButton>
 				<AbboutButton 	
 					id="Drum"
 					onClick={()=>{
-						setContent(<Drummer/>)
+						setContent(AbboutPages[1])
 						setBorderProg(0)
 						setBorderDrum(3)
-					}
-					}>
+					}}>
 					<GiDrum size="100%"/>
 				</AbboutButton>
 			</span>
@@ -43,4 +41,5 @@ function Abbout(props){
 		</AbboutS>
 	)
 }
+
 export default Abbout

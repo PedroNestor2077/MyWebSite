@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import {ButtonWithOutBorder} from "../genericStyles"
+
 
 export const FooterS=styled.div`
 	display:flex;
@@ -9,30 +11,10 @@ export const FooterS=styled.div`
 	height:80px;
 	color:white;
 	text-align:center;
-	p{
-		margin:0px;
-	}
-	button{
-		position:relative;
-		outline: thin dotted;
-	    outline: 0px auto -webkit-focus-ring-color;
-	    outline-offset: 0px;
-	    border:none;
-	    background-color:transparent;
-	    color:white;
-	    cursor:pointer;
-	    animation:UpButtonAnimation 1s infinite;
-	    animation-direction:alternate;
-	    @keyframes UpButtonAnimation{
-	    	from{
-	    		top:-20px;
-	    		color:rgb(0,191,255)
-	    	}
-	    	to{
-	    		top:10px;
+`;
 
-	    	}
-	    }
-	}
-
+export const UpButton=styled(ButtonWithOutBorder)`
+	position:relative;
+	animation:UpButtonAnimation 1s infinite;
+	animation-direction:alternate;
 `;

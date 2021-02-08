@@ -10,7 +10,6 @@ export const ContactS=styled.div`
 	h3{
 		color:white;
 	}
-
 `;
 
 export const ContactList=styled.div`
@@ -38,30 +37,22 @@ export const EmailS=styled.div`
 	color:white;
 	width:50%;
 	border-radius:10px;
-
 	form{
 		background-color:transparent;
 		border-radius:10px;
 		display:flex;
 		flex-direction:column;
 		button{
-			margin:10px;
+			margin:3px;
 		}
 		textarea{
 			border-radius:5px;
 		}
 		
 	}
-
 `;
 
 export const OtherContacts=styled.div`
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:center;
-	width:100%;
-	
 `;
 
 export const Loading=styled.div`

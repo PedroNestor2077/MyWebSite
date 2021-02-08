@@ -1,22 +1,15 @@
 import React,{useState} from 'react'
 import {NavBarS,NavButton,InlineNav,MenuHamburger, ColumnNav,MidiaNav} from "./headerStyle.js"
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import MenuIcon from '@material-ui/icons/Menu';
-import MenuOpenIcon from '@material-ui/icons/MenuOpen';
-
-import {TiSocialLinkedin,TiSocialInstagram} from "react-icons/ti"
+import {TiSocialLinkedin} from "react-icons/ti"
 import { AiFillGithub,AiOutlineWhatsApp} from "react-icons/ai"
-import { MdEmail } from "react-icons/md"
 import {RiMenuLine,RiMenuUnfoldLine} from "react-icons/ri"
-/* THAT COMPONENT WILL BE RETURNED TO HEADER ON TRUE VALUE */
 
 function NavBar(){
     const [Show,setShow]=useState("-800")
     const [MenuIco,setMenuIco]=useState(<RiMenuLine size="35px"/>)
     return(
         <NavBarS>
-            <InlineNav max="600">
+            <InlineNav max="600" id="InlineNav">
                 <NavButton 
                     href="#">
                     Home
@@ -37,7 +30,7 @@ function NavBar(){
                     Contato
                 </NavButton>
             </InlineNav>
-            <MidiaNav>
+            <MidiaNav id="MidiaNav">
                 <NavButton 
                     href="https://www.linkedin.com/in/pedro-nestor-a67241200/">
                     <TiSocialLinkedin size="35px"/>
@@ -48,8 +41,8 @@ function NavBar(){
                     <AiFillGithub size="35px"/>
                 </NavButton>
             </MidiaNav>
-            <MenuHamburger min="100">
-                <ColumnNav margin={Show}>
+            <MenuHamburger min="100" id="MenuHamburger">
+                <ColumnNav margin={Show} id="ColumnNav">
                     <NavButton 
                         href="#">
                             Home
@@ -84,7 +77,6 @@ function NavBar(){
                 }}>
                     {MenuIco}
                 </NavButton>
-
             </MenuHamburger>
         </NavBarS>
     )

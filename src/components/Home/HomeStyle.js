@@ -1,7 +1,5 @@
 import styled from "styled-components"
-/* HOME styles file*/
-
-
+import {ButtonWithOutBorder} from "../genericStyles.js"
 export const HomeS=styled.div`
 	display:flex;
 	align-items:center;
@@ -9,15 +7,16 @@ export const HomeS=styled.div`
 	background-color:transparent;
 	height:100%;
 	min-height:100%;
-`;		
+`;	
+
 export const HomeContainer=styled.div`
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
-	WIDTH:auto;
-	margin-bottom:10%;
+	width:auto;
 `;
-export const Title=styled.span`
+
+export const HomeTitle=styled.span`
 	display:flex;
 	align-items:center;
 	background-color:transparent;
@@ -27,18 +26,16 @@ export const Title=styled.span`
 	color:white;
 	font-family:sans-serif;
 `;
+
 export const CodeIcon=styled.span`
 	margin-right:5px;
 	background-color:transparent;
 	width:40px;
 	height:40px;
 	color:rgba(0,191,255);
-	animation:example 18s infinite linear;
-	@keyframes example {
-	  from {-webkit-transform: rotate(0deg)}
-	  to {-webkit-transform: rotate(360deg)}
-	}
+	animation:Rotate 10s infinite linear;	
 `;
+
 export const Text=styled.div`
 	font-family: "Source Code Pro";
 	color:rgba(0,191,255,.9);
@@ -63,28 +60,9 @@ export const Text=styled.div`
 	}
 `;
 
-export const ScrollDownButton=styled.button`
+export const ScrollDownButton=styled(ButtonWithOutBorder)`
 	position:absolute;
-	bottom:00px;
-	outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;
-    background-color:transparent;
     width:60px;
-    border-radius:5px;
-    color:white;
-    cursor:pointer;
-    border:none;
-    animation:downButtonAnimation 1s infinite;
+    animation:downButtonAnimation 1s infinite ease-out;
     animation-direction:alternate;
-	@keyframes downButtonAnimation{
-		from{
-			bottom:0px;
-			color:rgb(0,191,255);
-		}
-		to{
-			color:white;
-			bottom:30px;
-		}
-	} 
 `;

@@ -2,37 +2,35 @@ import React,{useState} from 'react'
 import {HeaderS,Logo,ImgLogo} from "./headerStyle.js"
 import NavBar from "./navBar"
 import {RiArrowDownLine} from "react-icons/ri"
+import {logo} from "../ImgSurce.js"
 
 function Header(){
     const [PrevScroll,setPrevScroll]=useState()
     window.onscroll=()=>{
-        var teste=document.getElementById("teste1")
+        var header=document.getElementById("header")
         if(window.scrollY>1){
-            teste.style.position="fixed"
-            teste.style.top="-80px"
+            header.style.position="fixed"
+            header.style.top="-80px"
             if (PrevScroll>window.scrollY){
-                teste.style.top="0px"
-                teste.style.background="black"
+                header.style.top="0px"
+                header.style.background="black"
             }
             else{
-                teste.style.top="-80px"
+                header.style.top="-80px"
             }
         }else{
-            teste.style.position="absolute"
-            teste.style.background="transparent"
+            header.style.position="absolute"
+            header.style.background="transparent"
         }
         setPrevScroll(window.scrollY)
     };
-    var logo="images/logoSite.png"
+
     return(
-        <HeaderS id="teste1">
+        <HeaderS id="header">
             <Logo>
-                <ImgLogo src={logo}>
-                </ImgLogo>
+                <ImgLogo src={logo}/>
             </Logo>
             <NavBar/>
-            
-            
         </HeaderS>
 
     )

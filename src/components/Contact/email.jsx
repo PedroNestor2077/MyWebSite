@@ -2,7 +2,6 @@ import React,{useState} from 'react'
 import {EmailS,Loading,Notfy} from "./contactStyle.js"
 import emailjs from 'emailjs-com';
 import EmailForm from "./form"
-import { Backdrop } from '@material-ui/core';
 import { CircularProgress } from '@material-ui/core';
 
 function Email(){
@@ -40,7 +39,7 @@ function Email(){
 								show: -80
 							}
 						)
-	      			},1000)
+	      			},1200)
 	      }, (error) => {
 	        	setLoad('')
 	      		setShow(
@@ -62,9 +61,6 @@ function Email(){
 	      });
   	}
 
-	console.log(Show.show)
-
-
 	return(
 		<EmailS id="emailContainer">
 			<EmailForm action={sendEmail}/>
@@ -77,7 +73,6 @@ function Email(){
 	      			{Show.msg}
 	      		</p>
 	      	</Notfy>
-
 		</EmailS>
 		)
 }

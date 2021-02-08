@@ -1,0 +1,88 @@
+
+@media (min-width:1000px){
+	#MenuHamburger{
+        display:none;
+	}
+}
+@media (max-width:1000px){
+	#InlineNav{
+        display:none;
+	}
+	
+}
+@media (max-width:900px){
+	#SideBarS{
+		transform: translateX(-100px);
+	}
+}
+@media (max-width:800px){
+	#ProgramerS{
+		flex-direction:column;
+		height:auto;
+		margin-top:20px;
+		#img{
+			justify-content:center;
+			width:100%;
+			img{
+				width:100%;
+				min-width:300px;
+			}
+		}
+		#text{
+			text-align:center;
+			width:100%;
+			height:auto;
+		}
+	}
+	#ProjectInfo{
+		width:100%;
+	}
+		
+}
+@media (max-width:600px){
+	#MidiaNav{
+		display:none;
+	}
+}
+@media (max-width:500px){
+	#columnNav{
+        width:100%;
+        background-color:rgba(0,0,0,.9);
+    }
+}
+
+
+/*---------------ANIMATION--------------*/
+
+@keyframes AbboutfadeIn { 
+		from{
+			opacity:0;
+		}
+		to{
+			opacity:1;
+		}
+	}
+@keyframes UpButtonAnimation{
+	from{
+	    top:-20px;
+	    color:rgb(0,191,255)
+	}
+	to{
+	    top:10px;
+
+	}
+}
+@keyframes Rotate {
+	  from {-webkit-transform: rotate(0deg)}
+	  to {-webkit-transform: rotate(360deg)}
+	}
+@keyframes downButtonAnimation{
+		from{
+			bottom:0px;
+			color:rgb(0,191,255);
+		}
+		to{
+			color:white;
+			bottom:30px;
+		}
+	} 

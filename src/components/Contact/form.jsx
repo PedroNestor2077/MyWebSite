@@ -1,8 +1,6 @@
 import React,{useState} from "react"
-import {Button,TextField,Switch,FormControlLabel} from "@material-ui/core"
+import {Button,TextField} from "@material-ui/core"
 import { TextareaAutosize } from '@material-ui/core';
-
-
 
 function EmailForm(props){
 
@@ -26,8 +24,7 @@ function EmailForm(props){
         variant='filled'
         fullWidth 
         margin="normal"
-      />
-            
+      />   
       <TextField 
         name="phone_number"
         id="CPF" 
@@ -43,9 +40,6 @@ function EmailForm(props){
         rowsMax={5} 
         placeholder="Mensagem" 
       />
-      
-
-
       <Button 
         type="submit" 
         variant="contained" 
@@ -55,4 +49,5 @@ function EmailForm(props){
     </form>
   );
 };
+
 export default EmailForm

@@ -1,14 +1,14 @@
 import React from 'react'
 import {ProgramerS,ItenText,ItenImg} from "./abboutStyle.js"
-import {CSSTransition} from 'react-transition-group';
 
-function Programer(props){
+function Programer(){
 	
 	return(
-		<CSSTransition className="teste" in={true} appear={true}>
-			<ProgramerS opacity={props.opacity}>
+			<ProgramerS id="ProgramerS">
 				<ItenImg id="img">
-							<img src="./images/programer.png" alt="MyPhoto" width='100%'></img>
+							<img 
+								src="./images/programer.png" alt="MyPhoto" width='100%'>
+							</img>
 				</ItenImg>
 				<ItenText id="text">
 					<h2>Pedro Nestor</h2>
@@ -36,7 +36,6 @@ function Programer(props){
 					</p>
 				</ItenText>
 			</ProgramerS>
-		</CSSTransition>
 	)
 };
 

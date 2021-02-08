@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import {ButtonWithOutBorder} from '../genericStyles'
 export const ProjectsS=styled.div`
 	display:flex;
 	flex-direction:column;
@@ -22,29 +22,6 @@ export const ProjectBoxS=styled.div`
 	text-align:justify;
 	color:white;
 	background-color:rgba(255,255,255,.1);	
-	
-`;
-
-export const Title=styled.div`
-	margin-top:50px;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	background-color:transparent;
-	align-items:center;
-	width:100%;
-	height:auto;
-	color:white;
-	font-size:30px;
-	div{
-		font-size:45px;
-		width:110px;
-		height:50%;
-		background-color:rgba(0,191,255,.9);
-	}
-	h2{
-		margin:5px;
-	}
 `;
 
 export const ProjectInfo=styled.div`
@@ -54,10 +31,6 @@ export const ProjectInfo=styled.div`
 	font-size:15px;
 	display:flex;
 	flex-direction:column;
-	@media(max-width:800px){
-		width:100%;
-
-	}
 `;
 
 export const Wrapper=styled.div`
@@ -91,11 +64,10 @@ export const ImgSliderS=styled.div`
 	.MuiFormGroup-root{
 		flex-direction:row;
 		color:white;
-	} ''
+	}
 	.MuiSvgIcon-root{
 		color:white;
 	}
-	
 `;
 
 export const Image=styled.div`
@@ -106,21 +78,13 @@ export const Image=styled.div`
 		width:300px;
 		min-width:300px;
 	}
-
 `;
 
-export const HandleButton=styled.button`
-	background-color:transparent;
+export const HandleButton=styled(ButtonWithOutBorder)`
+	display:flex;
+	align-items:center;
 	position:absolute;
-	outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;
-    background-color:transparent;
     width:60px;
-    border-radius:5px;
-    color:red;
-    cursor:pointer;
-    border:none;
     height:100%;
 `;
 

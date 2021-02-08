@@ -1,29 +1,28 @@
 import React,{useState} from "react"
-import {HomeS,Title,CodeIcon,Text,HomeContainer,ScrollDownButton} from "./HomeStyle.js"
-import {RiCodeSSlashLine} from "react-icons/ri"
+import {HomeS,HomeTitle,CodeIcon,Text,HomeContainer,ScrollDownButton} from "./HomeStyle.js"
 import {FiTerminal} from "react-icons/fi"
 import ReactTypingEffect from 'react-typing-effect';
-import SideBar from "../Header/sideBar"
+import SideBar from "./sideBar"
 import {BsChevronCompactDown} from 'react-icons/bs'
-
+import {TitleCodeIcon} from "../ImgSurce.js"
 
 function Home(){
 	const text=
 	[
-	"#OPEN TO WORK",
-	"DESENVOLVEDOR FRONT-END",
-	"DESENVOLVEDOR REACT JS"
+		"#OPEN TO WORK",
+		"DESENVOLVEDOR FRONT-END",
+		"DESENVOLVEDOR REACT JS"
 	]
 	return(
 		<HomeS>
 			<HomeContainer>
 				<SideBar/>
-				<Title>
-					<CodeIcon id="ad" >
-						<img src="./images/ico_code.png" width="40px"/>
+				<HomeTitle>
+					<CodeIcon>
+						<img src={TitleCodeIcon} width="40px"/>
 					</CodeIcon>
 					<h2>Hi, i'm Pedro :)</h2>
-				</Title>
+				</HomeTitle>
 				<Text>
 					<h3>DESENVOLVEDOR FRONT-END</h3>
 					<h3>CIENTISTA DA COMPUTAÇÃO</h3>

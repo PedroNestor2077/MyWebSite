@@ -1,6 +1,6 @@
 import React from 'react'
 import {ContactS,ContactList,OtherContacts} from './contactStyle.js'
-import {Title} from "../Projects/projectsStyle"
+import {Title} from "../genericStyles"
 import Email from "./email"
 function Contact(){
 	return(
@@ -17,7 +17,6 @@ function Contact(){
 					<a>Instagram - @pedro_yyy</a>
 					<a>contato.pedronestor@gmail.com</a>
 				</OtherContacts>
-				
 			</ContactList>		
 		</ContactS>
 		)
