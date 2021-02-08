@@ -4,7 +4,7 @@ import ImgSlider from "./imgSlider"
 
 function ProjectBox(props){
 	return(
-		<ProjectBoxS color={props.color}>
+		<ProjectBoxS color={props.color} id="box">
 			<ProjectInfo>
 				<h2>{props.title}</h2>
 				<ul>

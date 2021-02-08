@@ -16,12 +16,13 @@ export const ProjectBoxS=styled.div`
 	flex-shrink:0;
 	align-items:center;
 	justify-content:center;
-	width:100%;
+	width:100vw;
+	max-width:800px;
 	height:auto;
 	text-align:justify;
 	color:white;
-	background-color:rgba(255,255,255,.1);
-		
+	background-color:rgba(255,255,255,.1);	
+	
 `;
 
 export const Title=styled.div`
@@ -60,16 +61,11 @@ export const ProjectInfo=styled.div`
 `;
 
 export const Wrapper=styled.div`
-
-	display:flex;
-	width:700px;
+	width:100%;
+	max-width:800px;
 	position:relative;
-	overflow-x:hidden;
 	border-radius:5px;
-	@media(max-width:800px){
-		width:100%;
-	}
-
+	overflow-x:hidden;
 	#prev{
 		left:0px;
 	}
@@ -79,8 +75,11 @@ export const Wrapper=styled.div`
 `;
 
 export const ProjectList=styled.div`
-	display:inline-block;
-	width:${props=> `${props.width}px`}
+	width:auto;
+	display:flex;
+	justify-content:flex-start;
+	margin-left:${props=>`${props.margin}px`};
+	transition:all ease .5s;
 `;
 
 export const ImgSliderS=styled.div`
@@ -111,7 +110,6 @@ export const Image=styled.div`
 export const HandleButton=styled.button`
 	background-color:transparent;
 	position:absolute;
-	height:100%;
 	outline: thin dotted;
     outline: 0px auto -webkit-focus-ring-color;
     outline-offset: 0px;
@@ -121,5 +119,6 @@ export const HandleButton=styled.button`
     color:red;
     cursor:pointer;
     border:none;
+    height:100%;
 `;
 

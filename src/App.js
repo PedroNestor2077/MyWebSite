@@ -10,7 +10,6 @@ function App() {
 
   return (
     <AppS>
-
       <Background>
         <ImgBackground/>
       </Background> 
