@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {ButtonWithOutBorder} from '../genericStyles'
+import {ButtonWithOutBorder,Link} from '../genericStyles'
 
 export const ProjectsS=styled.div`
 	display:flex;
@@ -18,31 +18,42 @@ export const ProjectBoxS=styled.div`
 	align-items:center;
 	justify-content:center;
 	width:100vw;
-	max-width:800px;
+	max-width:900px;
 	height:auto;
 	text-align:justify;
 	color:white;
-	background-color:rgba(255,255,255,0);	
-
+	background-color:transparent;
+	ul{
+		font-family: "Source Code Pro";
+		margin-left:30px;
+	}
+	li{
+		color:white;
+		margin:5px;
+	}
+	h2{
+		font-family: "Source Code Pro";
+		margin:10px;
+		font-size:33px;
+	}
 `;
 
 export const ProjectInfo=styled.div`
 	text-align:left;
 	background-color:transparent;
 	width:80%;
-	font-size:15px;
+	font-size:18px;
 	display:flex;
 	flex-direction:column;
 `;
 
 export const Wrapper=styled.div`
-
+	background-color:rgba(0,0,0,0);
 	margin-top:50px;
 	margin-bottom:50px;
 	width:100%;
-	max-width:800px;
+	max-width:900px;
 	position:relative;
-	border-radius:5px;
 	overflow-x:hidden;
 	#prev{
 		left:0px;
@@ -50,6 +61,7 @@ export const Wrapper=styled.div`
 	#next{
 		right:0px;
 	}
+	border-bottom:solid 2px rgb(0,191,255);
 `;
 
 export const ProjectList=styled.div`
@@ -66,6 +78,7 @@ export const ImgSliderS=styled.div`
 	flex-direction:column;
 	align-items:center;
 	justify-content:center;
+	overflow-x:hidden;
 	.MuiFormGroup-root{
 		flex-direction:row;
 		color:white;
@@ -90,5 +103,14 @@ export const HandleButton=styled(ButtonWithOutBorder)`
 	position:absolute;
     width:60px;
     height:100%;
+    transition:all .2s;
+    &:hover{
+    	color:gray;
+    	bottom:2px;
+    }
+    
+`;
+
+export const ProjectLink=styled(Link)`
 `;
 

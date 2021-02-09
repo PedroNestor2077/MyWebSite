@@ -3,6 +3,7 @@ import {ProjectsS,Wrapper,HandleButton,ProjectList} from "./projectsStyle.js"
 import {Title} from '../genericStyles.js'
 import ProjectBox from "./projectBox"
 import {GrNext,GrPrevious} from 'react-icons/gr'
+import {MdNavigateNext,MdNavigateBefore} from "react-icons/md"
 import {ProjectImages} from "../ImgSurce.js"
 function Projects(){
 
@@ -17,8 +18,7 @@ function Projects(){
 		const maxMargin=(boxSize*3)
 		if (BoxMargin!==(maxMargin*-1)){
 			setBoxMargin(BoxMargin-boxSize)
-		}
-		
+		}	
 	}
 	function Prev(){
 		let boxSize=(document.getElementById('box')).clientWidth
@@ -27,8 +27,6 @@ function Projects(){
 			setBoxMargin(BoxMargin+boxSize)
 		}
 	}
-
-
 	return(
 
 		<ProjectsS id='Projects'>
@@ -38,11 +36,12 @@ function Projects(){
 			</Title>
 			<Wrapper id="wrapper">
 				<HandleButton id="next" onClick={Next}>
-					<GrNext size="50px"/>
+					<MdNavigateNext size="50px" />
 				</HandleButton>
 				<HandleButton id="prev" onClick={Prev}>
-					<GrPrevious size="50px"/>
+					<MdNavigateBefore size="50px"/>
 				</HandleButton>
+
 				<ProjectList margin={BoxMargin}>
 					<ProjectBox 
 						images={ProjectImages.tiktim}

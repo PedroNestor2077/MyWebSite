@@ -4,7 +4,7 @@ export const TitleCodeIcon="./images/ico_code.png"
 export const ProjectImages={
 	tiktim:[
 		"./images/project-images/tiktim.png",
-		"./images/project-images/tiktim.png"
+		"./images/project-images/tiktim-2.png"
 	],
 	acordaNet:[
 		"./images/project-images/acorda.png"

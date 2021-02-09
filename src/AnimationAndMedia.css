@@ -4,6 +4,7 @@
         display:none;
 	}
 }
+
 @media (max-width:1000px){
 	#InlineNav{
         display:none;

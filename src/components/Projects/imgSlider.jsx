@@ -10,10 +10,7 @@ function ImgSlider(props){
 		console.log(value)
 		setBoxMargin(value*-300)
 	};
-
-	const [Images,seImages]=(
-		props.images.map((img) =>(<img src={img} width="300px"></img>))
-		)
+	console.log(props.images)
 	const [Buttons,setButtons]=useState(
 		props.images.map((img,index)=>(
 			<FormControlLabel 
@@ -29,10 +26,10 @@ function ImgSlider(props){
 	
 	const [BoxMargin,setBoxMargin]=useState(0)
 	return(
-		<ImgSliderS>
-			<Image>
-				<ProjectList margin={BoxMargin}>
-					{Images}
+		<ImgSliderS id="ImgSlider">
+			<Image id="Image">
+				<ProjectList margin={BoxMargin} >
+					{props.images.map((img) =>(<img src={img} width="300px" className="ProjectImage"></img>))}
 				</ProjectList>
 			</Image>
 			<FormControl component="fieldset" >
