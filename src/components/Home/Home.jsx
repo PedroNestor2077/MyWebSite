@@ -39,9 +39,7 @@ function Home(){
 					</span>
 				</Text>
 			</HomeContainer>
-			<ScrollDownButton onClick={()=>{
-				window.scrollTo(0,(window.innerHeight))
-				}}>
+			<ScrollDownButton href='#abbout'>
 					<BsChevronCompactDown size="100%" id="ico"/>
 				</ScrollDownButton>
 		</HomeS>

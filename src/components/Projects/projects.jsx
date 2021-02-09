@@ -5,6 +5,9 @@ import ProjectBox from "./projectBox"
 import {GrNext,GrPrevious} from 'react-icons/gr'
 import {ProjectImages} from "../ImgSurce.js"
 function Projects(){
+
+	const [BoxMargin,setBoxMargin]=useState(0)
+
 	window.onresize=()=>{
 		setBoxMargin(0)
 	}
@@ -15,6 +18,7 @@ function Projects(){
 		if (BoxMargin!==(maxMargin*-1)){
 			setBoxMargin(BoxMargin-boxSize)
 		}
+		
 	}
 	function Prev(){
 		let boxSize=(document.getElementById('box')).clientWidth
@@ -24,13 +28,12 @@ function Projects(){
 		}
 	}
 
-	const [BoxMargin,setBoxMargin]=useState(0)
 
 	return(
 
-		<ProjectsS>
+		<ProjectsS id='Projects'>
 			<Title >
-				<div>02</div>
+				<h3>02</h3>
 				<h2>Projetos</h2>
 			</Title>
 			<Wrapper id="wrapper">
@@ -60,7 +63,7 @@ function Projects(){
 						status="Finalizado"
 					></ProjectBox>
 					<ProjectBox 
-						images={ProjectImages.utitlitarioTiktim}
+						images={ProjectImages.utilitarioTiktim}
 						title="Utilitário TIKTIM"
 						goals='Programa de controle de produção e gestao'
 						surce="https://github.com/PedroNestor2077/Utilitario-Tiktim"

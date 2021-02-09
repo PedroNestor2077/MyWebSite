@@ -12,9 +12,13 @@ function Abbout(){
 	const [BorderDrum,setBorderDrum]=useState(0)
 	const [BorderProg,setBorderProg]=useState(3)
 	return(
-		<AbboutS borderDrum={BorderDrum} borderProg={BorderProg}>
+		<AbboutS 
+			borderDrum={BorderDrum} 
+			borderProg={BorderProg}
+			id="abbout"
+			>
 			<Title>
-				<div>01</div>
+				<h3>01</h3>
 				<h2>Sobre</h2>
 			</Title>
 			<span >

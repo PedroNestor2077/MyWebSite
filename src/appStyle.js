@@ -37,7 +37,7 @@ export const ImgBackground=styled.div`
 export const Body = styled.div`
     padding-top:20px;
     position:absolute;
-    background-color:rgba(0,0,0,.6);
+    background-color:rgba(0,0,0,.45);
     height:100%;
     min-height:500px;
     width:100%;

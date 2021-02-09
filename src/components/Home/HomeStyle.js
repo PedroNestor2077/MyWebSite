@@ -1,10 +1,10 @@
 import styled from "styled-components"
-import {ButtonWithOutBorder} from "../genericStyles.js"
+import {ButtonWithOutBorder,LinkWithOutBorder} from "../genericStyles.js"
 export const HomeS=styled.div`
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	background-color:transparent;
+	background-image:linear-gradient(to top,#111,transparent 20%);
 	height:100%;
 	min-height:100%;
 `;	
@@ -60,7 +60,7 @@ export const Text=styled.div`
 	}
 `;
 
-export const ScrollDownButton=styled(ButtonWithOutBorder)`
+export const ScrollDownButton=styled(LinkWithOutBorder)`
 	position:absolute;
     width:60px;
     animation:downButtonAnimation 1s infinite ease-out;

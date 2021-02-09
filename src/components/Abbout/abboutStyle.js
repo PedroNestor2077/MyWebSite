@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import {ButtonWithOutBorder} from "../genericStyles"
+import {ButtonWithOutBorder,Link} from "../genericStyles"
+
 export const AbboutS=styled.div`
 	display:flex;
 	flex-direction:column;
@@ -25,8 +26,11 @@ export const ProgramerS=styled.div`
 	align-items:center;
 	justify-content:center;
 	width:100%;
-	height:100%;
+	min-height:100vh;
 	animation:AbboutfadeIn 2s;
+	margin-top:50px;
+	margin-bottom:50px;
+
 `;
 
 export const DrummerS=styled.div`
@@ -35,10 +39,13 @@ export const DrummerS=styled.div`
 	align-items:center;
 	justify-content:center;
 	width:100%;
-	height:100%;
+	min-height:100vh;
 	color:white;
 	font-size:110%;
 	text-align:center;
+	margin-top:50px;
+	margin-bottom:50px;
+
 	p{
 		margin:10px;
 	}
@@ -74,6 +81,9 @@ export const ItenText=styled.div`
 	p{
 		margin:10px;
 	}
+	h2{
+		color:rgba(0,192,255,.7)
+	}
 `;
 
 export const ItenImg=styled.div`
@@ -91,4 +101,8 @@ export const ItenImg=styled.div`
 
 export const AbboutButton=styled(ButtonWithOutBorder)`
 	width:70px;	
+`;
+
+export const AbboutLink=styled(Link)`
+	
 `;

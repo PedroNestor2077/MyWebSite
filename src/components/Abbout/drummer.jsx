@@ -1,5 +1,5 @@
 import React from 'react'
-import {DrummerS,ItenImgDrummer} from "./abboutStyle.js"
+import {DrummerS,ItenImgDrummer,AbboutLink} from "./abboutStyle.js"
 
 function Drummer(){
 	
@@ -7,7 +7,7 @@ function Drummer(){
 		<DrummerS >
 			<p>
 				<h2>Programador também é gente!</h2>
-				<p>Todo mundo merece um hobby,ne?<br/>O meu se chama BATERIA!</p>
+				<p>Todo mundo merece um hobby,ne?<br/>O meu se chama <AbboutLink id="drum">BATERIA</AbboutLink></p>
 			</p>
 
 			<ItenImgDrummer id="img">
@@ -15,7 +15,7 @@ function Drummer(){
 			</ItenImgDrummer>
 			<p>
 				Atravez da bateria descobri que a amo tocar bateria! <br/>
-				Clique <a href="https://www.facebook.com/pedro.nestor.98/videos/1943504902449169">aqui</a> e me veja tocando!
+				Clique <AbboutLink href="https://www.facebook.com/pedro.nestor.98/videos/1943504902449169" target="_blank">aqui</AbboutLink> e me veja tocando!
 			</p>
 		</DrummerS>
 	)

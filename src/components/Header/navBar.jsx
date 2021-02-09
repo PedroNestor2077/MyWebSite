@@ -10,34 +10,34 @@ function NavBar(){
     return(
         <NavBarS>
             <InlineNav max="600" id="InlineNav">
-                <NavButton 
-                    href="#">
-                    Home
-                </NavButton>
+                    <NavButton 
+                        href="#">
+                            Home
+                    </NavButton>
 
-                <NavButton 
-                    href="#">
-                    Sobre
-                </NavButton>
+                    <NavButton 
+                        href="#abbout">
+                            Sobre
+                    </NavButton>
 
-                <NavButton 
-                    href="#">
-                    Portfólio
-                </NavButton>
+                    <NavButton 
+                        href="#Projects">
+                            Portfólio
+                    </NavButton>
 
-                <NavButton 
-                    href="#">
-                    Contato
-                </NavButton>
+                    <NavButton 
+                        href="#contact">
+                            Contato
+                    </NavButton>
             </InlineNav>
             <MidiaNav id="MidiaNav">
                 <NavButton 
-                    href="https://www.linkedin.com/in/pedro-nestor-a67241200/">
+                    href="https://www.linkedin.com/in/pedro-nestor-a67241200/" target='_blank'>
                     <TiSocialLinkedin size="35px"/>
                 </NavButton>
 
                 <NavButton
-                    href="https://github.com/PedroNestor2077">
+                    href="https://github.com/PedroNestor2077" target="_blank">
                     <AiFillGithub size="35px"/>
                 </NavButton>
             </MidiaNav>
@@ -49,17 +49,17 @@ function NavBar(){
                     </NavButton>
 
                     <NavButton 
-                        href="#">
+                        href="#abbout">
                             Sobre
                     </NavButton>
 
                     <NavButton 
-                        href="#">
+                        href="#Projects">
                             Portfólio
                     </NavButton>
 
                     <NavButton 
-                        href="#">
+                        href="#contact">
                             Contato
                     </NavButton>
                 </ColumnNav>

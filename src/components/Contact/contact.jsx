@@ -4,17 +4,18 @@ import {Title} from "../genericStyles"
 import Email from "./email"
 function Contact(){
 	return(
-		<ContactS>
+		<ContactS id="contact">
 			<Title >
-				<div>03</div>
+				<h3>03</h3>
 				<h2>Contato</h2>
 			</Title>
-			<h3>Me envie uma mensagem! estou sempre online :)</h3>
+			<h4>Me envie uma mensagem! estou sempre online :)</h4>
 			<ContactList>
 				<Email/>
 				<OtherContacts>
 					<a href="https://web.whatsapp.com/send?phone=5535997412678" target="_blank">WhatsApp: (xx)y yyyyyyyy</a>
-					<a>Instagram - @pedro_yyy</a>
+					<a href="https://www.instagram.com/pedro__yyy/" target="_blank"
+						>Instagram - @pedro_yyy</a>
 					<a>contato.pedronestor@gmail.com</a>
 				</OtherContacts>
 			</ContactList>		

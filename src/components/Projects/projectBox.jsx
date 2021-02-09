@@ -1,11 +1,12 @@
 import React from 'react'
 import {ProjectBoxS,ProjectInfo,ProjectList} from "./projectsStyle.js"
 import ImgSlider from "./imgSlider"
+import {IoIosArrowForward,IoIosArrowBack} from 'react-icons/io'
 
 function ProjectBox(props){
-
 	return(
 		<ProjectBoxS id="box">
+
 			<ProjectInfo id="ProjectInfo">
 				<h2>{props.title}</h2>
 				<ul>
@@ -16,7 +17,7 @@ function ProjectBox(props){
 					<li>{props.status}</li>
 				</ul>
 			</ProjectInfo>
-			<ImgSlider/>
+			<ImgSlider images={props.images}/>
 		</ProjectBoxS>
 	)
 }

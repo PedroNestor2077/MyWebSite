@@ -7,9 +7,7 @@ function Footer(){
 			<p>
 				Copyright 2021. | desenvolvido por <strong>Pedro Nestor</strong>
 			</p>
-			<UpButton onClick={()=>{
-				window.scrollTo(0,0)
-				}}>
+			<UpButton href="#">
 				<BiArrowToTop size="30px"/>
 			</UpButton>
 		</FooterS>

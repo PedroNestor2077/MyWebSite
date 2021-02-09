@@ -3,11 +3,14 @@ import styled from "styled-components"
 export const HeaderS=styled.div`
     display:flex;
     justify-content:center;
-    background-color:rgba(0,0,0,.0);
     width:100%;
     height:80px;
-    transition:all .3s linear;
+    transition:all .2s linear;
     position:fixed;
+    z-index:1;
+    position:${props=> `${props.position}`};
+    top:${props=>`${props.margin}px`};
+    background-color:${props=>`${props.background}`};
 `;
 
 export const Logo=styled.div`
@@ -105,6 +108,5 @@ export const SideBarS=styled.div`
     width:35px;
     background-color:transparent;
     transition:all 1.5s;
-
 `;
 

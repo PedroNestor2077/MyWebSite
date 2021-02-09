@@ -4,15 +4,17 @@ export const ContactS=styled.div`
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	background-color:rgba(0,0,0,.98);
+	background-color:#111;
 	width:100%;
 	height:auto;
-	h3{
+	h4{
+		margin-top:50px;
 		color:white;
 	}
 `;
 
 export const ContactList=styled.div`
+	margin-bottom:50px;
 	background-color:rgba(255,255,255,.8);
 	display:flex;
 	width:80%;

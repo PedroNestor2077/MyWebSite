@@ -1,11 +1,12 @@
 import styled from "styled-components"
 import {ButtonWithOutBorder} from '../genericStyles'
+
 export const ProjectsS=styled.div`
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 	justify-content:center;
-	background-color:rgba(0,0,10,.98);
+	background-color:#111;
 	width:100%;
 	height:auto;
 `;
@@ -21,7 +22,8 @@ export const ProjectBoxS=styled.div`
 	height:auto;
 	text-align:justify;
 	color:white;
-	background-color:rgba(255,255,255,.1);	
+	background-color:rgba(255,255,255,0);	
+
 `;
 
 export const ProjectInfo=styled.div`
@@ -34,6 +36,9 @@ export const ProjectInfo=styled.div`
 `;
 
 export const Wrapper=styled.div`
+
+	margin-top:50px;
+	margin-bottom:50px;
 	width:100%;
 	max-width:800px;
 	position:relative;
@@ -72,7 +77,6 @@ export const ImgSliderS=styled.div`
 
 export const Image=styled.div`
 	background-color:transparent;
-	overflow-x:hidden;
 	width:300px;
 	img{
 		width:300px;

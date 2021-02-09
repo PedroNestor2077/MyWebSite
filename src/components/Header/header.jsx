@@ -6,27 +6,34 @@ import {logo} from "../ImgSurce.js"
 
 function Header(){
     const [PrevScroll,setPrevScroll]=useState()
+    const [HeaderPosition,setHeaderPosition]=useState('absolute')
+    const [HeaderBackground,setHeaderBackground]=useState('transparent')
+    const [HeaderMargin,setheaderMargin]=useState(0)
+
     window.onscroll=()=>{
-        var header=document.getElementById("header")
         if(window.scrollY>1){
-            header.style.position="fixed"
-            header.style.top="-80px"
+            setHeaderPosition('fixed')
+            setheaderMargin(-80)
             if (PrevScroll>window.scrollY){
-                header.style.top="0px"
-                header.style.background="black"
+                setheaderMargin(0)
+                setHeaderBackground('#111')
             }
             else{
-                header.style.top="-80px"
+                setheaderMargin(-80)
             }
         }else{
-            header.style.position="absolute"
-            header.style.background="transparent"
+            setHeaderPosition('absolute')
+            setHeaderBackground('transparent')
         }
         setPrevScroll(window.scrollY)
     };
 
     return(
-        <HeaderS id="header">
+        <HeaderS 
+            position={HeaderPosition}
+            margin={HeaderMargin}
+            background={HeaderBackground}
+            id="header">
             <Logo>
                 <ImgLogo src={logo}/>
             </Logo>

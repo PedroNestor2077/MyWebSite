@@ -7,7 +7,7 @@ function Programer(){
 			<ProgramerS id="ProgramerS">
 				<ItenImg id="img">
 							<img 
-								src="./images/programer.png" alt="MyPhoto" width='100%'>
+								src="./images/TESTE.png" alt="MyPhoto" width='100%'>
 							</img>
 				</ItenImg>
 				<ItenText id="text">
