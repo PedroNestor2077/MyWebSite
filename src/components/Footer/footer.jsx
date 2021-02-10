@@ -1,6 +1,6 @@
 import React from 'react'
 import {FooterS,UpButton} from "./footerStyle"
-import {BiArrowToTop} from "react-icons/bi"
+import {BiUpArrowCircle} from "react-icons/bi"
 function Footer(){
 	return(
 		<FooterS>
@@ -8,7 +8,7 @@ function Footer(){
 				Copyright 2021. | desenvolvido por <strong>Pedro Nestor</strong>
 			</p>
 			<UpButton href="#">
-				<BiArrowToTop size="30px"/>
+				<BiUpArrowCircle size="30px"/>
 			</UpButton>
 		</FooterS>
 		)

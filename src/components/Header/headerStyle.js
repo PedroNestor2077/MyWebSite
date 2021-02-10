@@ -59,7 +59,7 @@ export const ColumnNav=styled.div`
     align-items:center;
     padding-top:80px;
     position:fixed;
-    background-color:rgba(0,0,0,.6);
+    background-color:rgba(0,0,0,.7);
     width:auto;
     height:100%;
     top:${props => `${props.margin}px`};

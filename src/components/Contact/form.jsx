@@ -38,7 +38,7 @@ function EmailForm(props){
         aria-label="minimum height" 
         rowsMin={5} 
         rowsMax={5} 
-        placeholder="Mensagem" 
+        placeholder=" Mensagem" 
       />
       <Button 
         type="submit" 

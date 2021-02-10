@@ -28,7 +28,7 @@ export const ProgramerS=styled.div`
 	width:100%;
 	min-height:100vh;
 	animation:AbboutfadeIn 2s;
-	margin-top:50px;
+	margin-top:0px;
 	margin-bottom:50px;
 
 `;
@@ -59,6 +59,8 @@ export const ItenImgDrummer=styled.div`
 	align-items:center;
 	width:100%;
 	height:100%;
+	margin-top:30px;
+	margin-bottom:30px;
 	img{
 		justify-content:center;
 		width:100%;
@@ -91,7 +93,7 @@ export const ItenImg=styled.div`
 	justify-content:flex-end;
 	background-color:transparent;
 	align-items:center;
-	width:50%;
+
 	height:100%;
 	img{
 		max-width:430px;

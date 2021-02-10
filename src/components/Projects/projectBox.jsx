@@ -8,7 +8,7 @@ function ProjectBox(props){
 		<ProjectBoxS id="box">
 			<ProjectInfo id="ProjectInfo">
 				<h2>{props.title}</h2>
-				<ul>
+				<ul id="projectText">
 					<li>{props.goals}</li>
 					<li><ProjectLink href={props.surce} target="_blank">Ver código fonte</ProjectLink></li>
 					<li>{props.tecnology}</li>

@@ -63,6 +63,6 @@ export const Text=styled.div`
 export const ScrollDownButton=styled(LinkWithOutBorder)`
 	position:absolute;
     width:60px;
-    animation:downButtonAnimation 1s infinite ease-out;
+    animation:downButtonAnimation .7s infinite ease-out;
     animation-direction:alternate;
 `;

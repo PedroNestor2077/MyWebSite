@@ -50,7 +50,7 @@ export const ProjectInfo=styled.div`
 export const Wrapper=styled.div`
 	background-color:rgba(0,0,0,0);
 	margin-top:50px;
-	margin-bottom:50px;
+	margin-bottom:100px;
 	width:100%;
 	max-width:900px;
 	position:relative;
@@ -92,6 +92,7 @@ export const Image=styled.div`
 	background-color:transparent;
 	width:300px;
 	img{
+		border-radius:10px;
 		width:300px;
 		min-width:300px;
 	}

@@ -10,8 +10,8 @@ function Home(){
 	const text=
 	[
 		"#OPEN TO WORK",
-		"DESENVOLVEDOR FRONT-END",
-		"DESENVOLVEDOR REACT JS"
+		"PROGRAMADOR JAVASCRIPT",
+		"DESENVOLVEDOR FRONT-END"
 	]
 	return(
 		<HomeS>
@@ -24,9 +24,12 @@ function Home(){
 					<h2>Hi, i'm Pedro :)</h2>
 				</HomeTitle>
 				<Text>
-					<h3>DESENVOLVEDOR FRONT-END</h3>
-					<h3>CIENTISTA DA COMPUTAÇÃO</h3>
-					<h3>PROGRAMADOR JAVASCRIPT</h3>
+
+					
+					
+					<h3>PROGRAMADOR PYTHON</h3>
+					<h3>DESENVOLVEDOR REACT JS</h3>
+					<h3>DESENVOLVEDOR DE APLICATIVOS</h3>
 					<span>
 						<FiTerminal  id="TerminalIcon" size="20px"/>
 						<ReactTypingEffect id="AnimattedText"

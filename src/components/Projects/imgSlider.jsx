@@ -7,8 +7,8 @@ function ImgSlider(props){
 
 	function changeImg(event){
 		let value=event.target.value
-		console.log(value)
 		setBoxMargin(value*-300)
+		setFormValue(parseInt(value))
 	};
 	console.log(props.images)
 	const [Buttons,setButtons]=useState(
@@ -19,11 +19,12 @@ function ImgSlider(props){
 			    			value={index}
 			    			size='small' 
 			    			color='primary' 
+			    			name="gender1"
 			    		/>}
 			    	onClick={changeImg}  />
 			))
 		)
-	
+	const [FormValue,setFormValue]=useState(0)
 	const [BoxMargin,setBoxMargin]=useState(0)
 	return(
 		<ImgSliderS id="ImgSlider">
@@ -32,8 +33,8 @@ function ImgSlider(props){
 					{props.images.map((img) =>(<img src={img} width="300px" className="ProjectImage"></img>))}
 				</ProjectList>
 			</Image>
-			<FormControl component="fieldset" >
-			  <RadioGroup aria-label="gender" name="gender1" >
+			<FormControl >
+			  <RadioGroup  name="gender1" value={FormValue} >
 			    {Buttons}
 			  </RadioGroup>
 			</FormControl>

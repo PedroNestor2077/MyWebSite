@@ -14,7 +14,7 @@ function Drummer(){
 				<img src="./images/drummer.png" alt="MyPhoto"></img>
 			</ItenImgDrummer>
 			<p>
-				Atravez da bateria descobri que a amo tocar bateria! <br/>
+				Atravez da música descobri que a amo tocar bateria! <br/>
 				Clique <AbboutLink href="https://www.facebook.com/pedro.nestor.98/videos/1943504902449169" target="_blank">aqui</AbboutLink> e me veja tocando!
 			</p>
 		</DrummerS>
